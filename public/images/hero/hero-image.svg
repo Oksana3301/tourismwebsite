@@ -1,0 +1,68 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="oceanGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891B2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sandGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDE68A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FCD34D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="1200" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- Sun -->
+  <circle cx="900" cy="150" r="80" fill="#FBBF24" opacity="0.9"/>
+  <circle cx="900" cy="150" r="100" fill="#FBBF24" opacity="0.3"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="200" cy="100" rx="60" ry="30" fill="white" opacity="0.7"/>
+  <ellipse cx="230" cy="100" rx="50" ry="25" fill="white" opacity="0.7"/>
+  <ellipse cx="180" cy="110" rx="40" ry="20" fill="white" opacity="0.7"/>
+  
+  <ellipse cx="700" cy="150" rx="70" ry="35" fill="white" opacity="0.6"/>
+  <ellipse cx="740" cy="150" rx="60" ry="30" fill="white" opacity="0.6"/>
+  <ellipse cx="670" cy="160" rx="50" ry="25" fill="white" opacity="0.6"/>
+  
+  <!-- Ocean -->
+  <rect y="400" width="1200" height="250" fill="url(#oceanGradient)"/>
+  
+  <!-- Waves -->
+  <path d="M0,450 Q150,430 300,450 T600,450 T900,450 T1200,450 L1200,650 L0,650 Z" fill="#0E7490" opacity="0.3"/>
+  <path d="M0,480 Q100,460 200,480 T400,480 T600,480 T800,480 T1000,480 T1200,480" stroke="white" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <!-- Beach -->
+  <ellipse cx="600" cy="650" rx="600" ry="150" fill="url(#sandGradient)"/>
+  
+  <!-- Palm trees -->
+  <!-- Left palm -->
+  <rect x="150" y="550" width="15" height="150" fill="#78350F" rx="2"/>
+  <ellipse cx="157" cy="540" rx="60" ry="25" fill="#22C55E" transform="rotate(-30 157 540)"/>
+  <ellipse cx="157" cy="540" rx="60" ry="25" fill="#16A34A" transform="rotate(-10 157 540)"/>
+  <ellipse cx="157" cy="540" rx="60" ry="25" fill="#15803D" transform="rotate(10 157 540)"/>
+  <ellipse cx="157" cy="540" rx="60" ry="25" fill="#166534" transform="rotate(30 157 540)"/>
+  
+  <!-- Right palm -->
+  <rect x="1035" y="570" width="15" height="130" fill="#78350F" rx="2"/>
+  <ellipse cx="1042" cy="560" rx="55" ry="23" fill="#22C55E" transform="rotate(-35 1042 560)"/>
+  <ellipse cx="1042" cy="560" rx="55" ry="23" fill="#16A34A" transform="rotate(-15 1042 560)"/>
+  <ellipse cx="1042" cy="560" rx="55" ry="23" fill="#15803D" transform="rotate(5 1042 560)"/>
+  <ellipse cx="1042" cy="560" rx="55" ry="23" fill="#166534" transform="rotate(25 1042 560)"/>
+  
+  <!-- Surfboard -->
+  <ellipse cx="450" cy="680" rx="80" ry="15" fill="#EF4444" transform="rotate(-20 450 680)"/>
+  <rect x="440" y="670" width="100" height="8" fill="#DC2626" rx="4" transform="rotate(-20 450 680)"/>
+  
+  <!-- Beach umbrella -->
+  <line x1="850" y1="620" x2="850" y2="680" stroke="#78350F" stroke-width="8"/>
+  <path d="M780,620 Q850,580 920,620 Z" fill="#F59E0B"/>
+  <path d="M780,620 Q850,590 920,620" stroke="#F59E0B" stroke-width="3" fill="none"/>
+</svg>
+

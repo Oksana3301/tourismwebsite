@@ -1,0 +1,67 @@
+<svg width="1950" height="800" viewBox="0 0 1950 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D5016;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A7C59;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="beachGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F4E4BC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D2B48C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky Background -->
+  <rect width="1950" height="800" fill="url(#skyGradient)"/>
+  
+  <!-- Mountains -->
+  <polygon points="0,400 300,200 600,300 900,150 1200,250 1500,180 1800,220 1950,200 1950,800 0,800" fill="url(#mountainGradient)"/>
+  
+  <!-- Beach/Coast -->
+  <polygon points="0,600 400,580 800,590 1200,585 1600,580 1950,575 1950,800 0,800" fill="url(#beachGradient)"/>
+  
+  <!-- Palm Trees -->
+  <g transform="translate(150,500)">
+    <rect x="48" y="50" width="4" height="100" fill="#8B4513"/>
+    <ellipse cx="50" cy="40" rx="25" ry="15" fill="#228B22"/>
+    <ellipse cx="50" cy="35" rx="20" ry="12" fill="#32CD32"/>
+  </g>
+  
+  <g transform="translate(1700,480)">
+    <rect x="48" y="50" width="4" height="120" fill="#8B4513"/>
+    <ellipse cx="50" cy="40" rx="30" ry="18" fill="#228B22"/>
+    <ellipse cx="50" cy="35" rx="25" ry="15" fill="#32CD32"/>
+  </g>
+  
+  <!-- Traditional Houses -->
+  <g transform="translate(800,450)">
+    <!-- House Base -->
+    <rect x="0" y="80" width="120" height="60" fill="#8B4513"/>
+    <!-- Roof -->
+    <polygon points="0,80 60,40 120,80" fill="#CD853F"/>
+    <!-- Door -->
+    <rect x="50" y="100" width="20" height="40" fill="#654321"/>
+  </g>
+  
+  <!-- Clouds -->
+  <g opacity="0.7">
+    <ellipse cx="300" cy="100" rx="40" ry="20" fill="white"/>
+    <ellipse cx="320" cy="90" rx="50" ry="25" fill="white"/>
+    <ellipse cx="340" cy="100" rx="35" ry="18" fill="white"/>
+  </g>
+  
+  <g opacity="0.6">
+    <ellipse cx="1400" cy="120" rx="45" ry="22" fill="white"/>
+    <ellipse cx="1425" cy="110" rx="55" ry="28" fill="white"/>
+    <ellipse cx="1450" cy="120" rx="40" ry="20" fill="white"/>
+  </g>
+  
+  <!-- Sun -->
+  <circle cx="1750" cy="150" r="60" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Text Overlay Area (Optional) -->
+  <rect x="0" y="0" width="1950" height="800" fill="rgba(0,0,0,0.3)"/>
+</svg>

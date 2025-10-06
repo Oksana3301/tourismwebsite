@@ -1,0 +1,68 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="oceanGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4682B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E90FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="islandGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#228B22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#32CD32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Ocean Background -->
+  <rect width="800" height="600" fill="url(#oceanGradient)"/>
+  
+  <!-- Waves -->
+  <path d="M0,400 Q200,380 400,400 T800,400 L800,600 L0,600 Z" fill="#87CEEB" opacity="0.7"/>
+  <path d="M0,450 Q150,430 300,450 T600,450 T800,450 L800,600 L0,600 Z" fill="#B0E0E6" opacity="0.5"/>
+  
+  <!-- Main Island -->
+  <ellipse cx="400" cy="350" rx="200" ry="80" fill="url(#islandGradient)"/>
+  
+  <!-- Smaller Islands -->
+  <ellipse cx="150" cy="380" rx="60" ry="25" fill="url(#islandGradient)"/>
+  <ellipse cx="650" cy="370" rx="80" ry="30" fill="url(#islandGradient)"/>
+  
+  <!-- Palm Trees on Main Island -->
+  <g transform="translate(350,280)">
+    <rect x="18" y="40" width="4" height="70" fill="#8B4513"/>
+    <path d="M20,30 Q10,20 5,35 Q15,25 20,30 Q30,25 35,35 Q25,20 20,30" fill="#228B22"/>
+  </g>
+  
+  <g transform="translate(420,285)">
+    <rect x="18" y="40" width="4" height="65" fill="#8B4513"/>
+    <path d="M20,30 Q10,20 5,35 Q15,25 20,30 Q30,25 35,35 Q25,20 20,30" fill="#228B22"/>
+  </g>
+  
+  <!-- Surfboard -->
+  <g transform="translate(300,320) rotate(15)">
+    <ellipse cx="0" cy="0" rx="40" ry="8" fill="#FF6347"/>
+    <rect x="-35" y="-2" width="70" height="4" fill="#FFD700"/>
+  </g>
+  
+  <!-- Boat -->
+  <g transform="translate(500,320)">
+    <path d="M0,10 Q20,0 40,10 L35,20 L5,20 Z" fill="#8B4513"/>
+    <rect x="18" y="-10" width="4" height="20" fill="#654321"/>
+    <polygon points="22,-10 22,5 45,0" fill="white"/>
+  </g>
+  
+  <!-- Clouds -->
+  <g opacity="0.8">
+    <ellipse cx="150" cy="80" rx="30" ry="15" fill="white"/>
+    <ellipse cx="170" cy="70" rx="40" ry="20" fill="white"/>
+    <ellipse cx="190" cy="80" rx="25" ry="12" fill="white"/>
+  </g>
+  
+  <!-- Sun -->
+  <circle cx="650" cy="100" r="40" fill="#FFD700" opacity="0.9"/>
+  
+  <!-- Seabirds -->
+  <g transform="translate(250,150)">
+    <path d="M0,0 Q5,-5 10,0 Q5,5 0,0" fill="#333" opacity="0.7"/>
+  </g>
+  <g transform="translate(550,120)">
+    <path d="M0,0 Q5,-5 10,0 Q5,5 0,0" fill="#333" opacity="0.7"/>
+  </g>
+</svg>

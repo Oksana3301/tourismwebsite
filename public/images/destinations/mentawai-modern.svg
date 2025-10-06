@@ -1,0 +1,66 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mentawaiSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0EA5E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284C7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mentawaiWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891B2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mentawaiWave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ECFEFF;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ECFEFF;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="350" fill="url(#mentawaiSky)"/>
+  
+  <!-- Sun -->
+  <circle cx="650" cy="100" r="50" fill="#FCD34D" opacity="0.9"/>
+  <circle cx="650" cy="100" r="70" fill="#FCD34D" opacity="0.3"/>
+  
+  <!-- Ocean -->
+  <rect y="350" width="800" height="250" fill="url(#mentawaiWater)"/>
+  
+  <!-- Wave (main feature) -->
+  <path d="M100,400 Q200,350 300,400 Q400,450 500,400 Q600,350 700,400" 
+        stroke="url(#mentawaiWave)" stroke-width="40" fill="none" opacity="0.8"/>
+  <path d="M150,420 Q250,380 350,420 Q450,460 550,420 Q650,380 750,420" 
+        stroke="url(#mentawaiWave)" stroke-width="25" fill="none" opacity="0.6"/>
+  
+  <!-- Surfer silhouette -->
+  <g transform="translate(450, 390)">
+    <!-- Board -->
+    <ellipse cx="0" cy="0" rx="45" ry="8" fill="#FFFFFF" transform="rotate(-15)"/>
+    <!-- Person -->
+    <circle cx="-5" cy="-25" r="8" fill="#1F2937"/>
+    <rect x="-7" y="-17" width="4" height="20" fill="#1F2937" transform="rotate(-10)"/>
+    <line x1="-10" y1="-10" x2="-25" y2="-15" stroke="#1F2937" stroke-width="3"/>
+    <line x1="0" y1="-10" x2="15" y2="-5" stroke="#1F2937" stroke-width="3"/>
+  </g>
+  
+  <!-- Tropical island silhouette -->
+  <ellipse cx="120" cy="370" rx="100" ry="30" fill="#065F46"/>
+  <circle cx="80" cy="350" r="25" fill="#047857"/>
+  <circle cx="100" cy="340" r="30" fill="#059669"/>
+  <circle cx="130" cy="345" r="28" fill="#10B981"/>
+  <circle cx="160" cy="355" r="25" fill="#047857"/>
+  
+  <!-- Small palm trees on island -->
+  <rect x="85" y="350" width="4" height="25" fill="#78350F"/>
+  <ellipse cx="87" cy="348" rx="12" ry="5" fill="#22C55E" transform="rotate(-20 87 348)"/>
+  <ellipse cx="87" cy="348" rx="12" ry="5" fill="#16A34A" transform="rotate(20 87 348)"/>
+  
+  <rect x="145" y="355" width="4" height="20" fill="#78350F"/>
+  <ellipse cx="147" cy="353" rx="10" ry="4" fill="#22C55E" transform="rotate(-25 147 353)"/>
+  <ellipse cx="147" cy="353" rx="10" ry="4" fill="#16A34A" transform="rotate(25 147 353)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="550" cy="250" r="3" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="580" cy="280" r="2" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="520" cy="220" r="2.5" fill="#FFFFFF" opacity="0.7"/>
+</svg>
+

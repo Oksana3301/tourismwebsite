@@ -1,0 +1,92 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bukittinggiSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="clockTower" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FCD34D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountain" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#065F46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#bukittinggiSky)"/>
+  
+  <!-- Sun -->
+  <circle cx="700" cy="100" r="45" fill="#FDE68A" opacity="0.8"/>
+  <circle cx="700" cy="100" r="60" fill="#FDE68A" opacity="0.4"/>
+  
+  <!-- Distant mountains -->
+  <path d="M0,300 L200,200 L350,250 L500,180 L650,240 L800,200 L800,400 L0,400 Z" 
+        fill="#047857" opacity="0.4"/>
+  
+  <!-- Mid mountains -->
+  <path d="M0,350 L150,280 L300,320 L450,260 L600,310 L800,270 L800,400 L0,400 Z" 
+        fill="url(#mountain)" opacity="0.7"/>
+  
+  <!-- Jam Gadang (Clock Tower) - iconic Bukittinggi landmark -->
+  <g transform="translate(350, 200)">
+    <!-- Tower base -->
+    <rect x="-40" y="120" width="80" height="80" fill="#92400E"/>
+    <rect x="-35" y="125" width="70" height="70" fill="#B45309"/>
+    
+    <!-- Tower middle section -->
+    <rect x="-30" y="80" width="60" height="40" fill="#78350F"/>
+    <rect x="-25" y="85" width="50" height="30" fill="#92400E"/>
+    
+    <!-- Tower top section -->
+    <rect x="-25" y="40" width="50" height="40" fill="#451A03"/>
+    
+    <!-- Clock face -->
+    <circle cx="0" cy="60" r="18" fill="#FFFFFF"/>
+    <circle cx="0" cy="60" r="15" fill="#F3F4F6"/>
+    <line x1="0" y1="60" x2="0" y2="52" stroke="#1F2937" stroke-width="2"/>
+    <line x1="0" y1="60" x2="8" y2="60" stroke="#1F2937" stroke-width="2"/>
+    <circle cx="0" cy="60" r="2" fill="#1F2937"/>
+    
+    <!-- Roof (distinctive curved Minangkabau style) -->
+    <path d="M-35,40 Q0,10 35,40" fill="url(#clockTower)"/>
+    <path d="M-30,40 Q0,15 30,40" stroke="#D97706" stroke-width="2" fill="none"/>
+    
+    <!-- Roof ornament -->
+    <rect x="-3" y="8" width="6" height="10" fill="#DC2626"/>
+    <circle cx="0" cy="8" r="5" fill="#FBBF24"/>
+    
+    <!-- Windows -->
+    <rect x="-15" y="95" width="12" height="20" fill="#451A03" rx="1"/>
+    <rect x="3" y="95" width="12" height="20" fill="#451A03" rx="1"/>
+    
+    <!-- Entrance -->
+    <path d="M-20,200 L-20,170 Q0,165 20,170 L20,200 Z" fill="#451A03"/>
+  </g>
+  
+  <!-- Ground with hills -->
+  <ellipse cx="400" cy="450" rx="400" ry="50" fill="#10B981"/>
+  <rect y="450" width="800" height="150" fill="#059669"/>
+  
+  <!-- Trees -->
+  <g opacity="0.8">
+    <ellipse cx="100" cy="430" rx="30" ry="40" fill="#166534"/>
+    <rect x="95" y="430" width="10" height="35" fill="#78350F"/>
+    
+    <ellipse cx="180" cy="440" rx="35" ry="45" fill="#15803D"/>
+    <rect x="174" y="440" width="12" height="40" fill="#78350F"/>
+    
+    <ellipse cx="650" cy="435" rx="32" ry="42" fill="#166534"/>
+    <rect x="644" y="435" width="12" height="38" fill="#78350F"/>
+    
+    <ellipse cx="720" cy="445" rx="38" ry="48" fill="#15803D"/>
+    <rect x="713" y="445" width="14" height="42" fill="#78350F"/>
+  </g>
+  
+  <!-- Decorative clouds -->
+  <ellipse cx="150" cy="80" rx="40" ry="20" fill="#FFFFFF" opacity="0.7"/>
+  <ellipse cx="180" cy="80" rx="35" ry="18" fill="#FFFFFF" opacity="0.7"/>
+  <ellipse cx="130" cy="90" rx="30" ry="15" fill="#FFFFFF" opacity="0.7"/>
+</svg>
+

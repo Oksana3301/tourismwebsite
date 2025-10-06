@@ -1,0 +1,25 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://wisatapadang.com/sitemap.xml
+
+# Crawl delay to prevent overwhelming the server
+Crawl-delay: 1
+
+# Block common bot paths
+Disallow: /private/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow specific search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

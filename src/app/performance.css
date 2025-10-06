@@ -1,0 +1,148 @@
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+/* GPU Acceleration for animated elements */
+@layer utilities {
+  .gpu-accelerate {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  .gpu-opacity {
+    will-change: opacity;
+  }
+  
+  .gpu-transform {
+    will-change: transform;
+  }
+  
+  /* Remove will-change after animation */
+  .gpu-accelerate-auto {
+    will-change: auto;
+  }
+}
+
+/* Optimize images for loading */
+@layer components {
+  .optimized-image {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 500px;
+  }
+  
+  /* Lazy load content */
+  .lazy-content {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 1000px;
+  }
+}
+
+/* Reduce motion for accessibility AND performance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Performance optimized transitions */
+@layer base {
+  /* Remove universal transition - HUGE performance gain */
+  * {
+    transition: none;
+  }
+  
+  /* Only add transitions to specific interactive elements */
+  button,
+  a,
+  input,
+  select,
+  textarea,
+  [role="button"],
+  [role="link"],
+  .card,
+  .btn {
+    transition-property: transform, opacity, box-shadow, background-color, color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Optimize hover states with contain */
+  .hover-optimized {
+    contain: layout style paint;
+  }
+  
+  /* Use transform instead of position for animations */
+  .animate-optimized {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Optimize fonts */
+@layer base {
+  @font-face {
+    font-family: 'Inter Variable';
+    font-display: swap; /* Prevent FOUT */
+    font-weight: 100 900;
+  }
+}
+
+/* Container queries for better performance than media queries in some cases */
+@layer utilities {
+  .container-query {
+    container-type: inline-size;
+  }
+}
+
+/* Intersection Observer optimization classes */
+@layer utilities {
+  .io-animate {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .io-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+}
+
+/* Reduce paint areas */
+@layer utilities {
+  .contain-paint {
+    contain: paint;
+  }
+  
+  .contain-layout {
+    contain: layout;
+  }
+  
+  .contain-strict {
+    contain: strict;
+  }
+}
+
+/* Optimize scroll performance */
+@layer base {
+  .smooth-scroll-section {
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+  }
+  
+  .scroll-snap-item {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+}
+
