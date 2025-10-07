@@ -309,7 +309,7 @@ const ExperiencesPage = () => {
                     transition={{ duration: 0.6, delay: (itemIndex * 0.1) + 0.2 }}
                     className="group"
                   >
-                    <Card className="h-full overflow-hidden bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 rounded-2xl">
+                    <Card className="h-full overflow-hidden bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 rounded-2xl flex flex-col">
                       <div className="relative h-64 overflow-hidden bg-gray-200 dark:bg-gray-800">
                         <img
                           src={item.image}
@@ -327,10 +327,10 @@ const ExperiencesPage = () => {
                         </div>
                       </div>
                       
-                      <CardContent className="p-8">
+                      <CardContent className="p-8 flex flex-col h-full">
                         <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">{item.description}</p>
                         
-                        <div className="mb-4">
+                        <div className="mb-4 flex-grow">
                           <h4 className="font-semibold text-black dark:text-white mb-2 text-sm uppercase tracking-wide">Highlights:</h4>
                           <ul className="space-y-2">
                             {item.highlights.map((highlight, i) => (
@@ -356,7 +356,7 @@ const ExperiencesPage = () => {
                           </div>
                         </div>
                         
-                        <Button className="w-full bg-black dark:bg-white hover:bg-gray-900 dark:hover:bg-gray-100 text-white dark:text-black py-6 text-base font-semibold rounded-full transition-all duration-300 shadow-sm hover:shadow-md">
+                        <Button className="w-full bg-black dark:bg-white hover:bg-gray-900 dark:hover:bg-gray-100 text-white dark:text-black py-6 text-base font-semibold rounded-full transition-all duration-300 shadow-sm hover:shadow-md mt-auto">
                           Book Experience
                         </Button>
                       </CardContent>

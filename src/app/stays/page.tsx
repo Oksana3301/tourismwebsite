@@ -260,7 +260,7 @@ const StaysPage = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="group"
                 >
-                  <Card className="h-full overflow-hidden bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 rounded-2xl">
+                  <Card className="h-full overflow-hidden bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 rounded-2xl flex flex-col">
                     <div className="relative h-64 overflow-hidden bg-gray-200 dark:bg-gray-800">
                       <img
                         src={stay.image}
@@ -285,7 +285,7 @@ const StaysPage = () => {
                       </div>
                     </div>
                     
-                    <CardContent className="p-6">
+                    <CardContent className="p-6 flex flex-col h-full">
                       <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200 dark:border-gray-800">
                         <div>
                           <span className="text-3xl font-bold text-gray-900 dark:text-white">
@@ -317,7 +317,7 @@ const StaysPage = () => {
                         </div>
                       </div>
                       
-                      <div className="mb-6">
+                      <div className="mb-6 flex-grow">
                         <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-sm uppercase tracking-wide">Highlights:</h4>
                         <ul className="space-y-2">
                           {stay.highlights.map((highlight, i) => (
@@ -329,7 +329,7 @@ const StaysPage = () => {
                         </ul>
                       </div>
                       
-                      <Button className="w-full bg-black dark:bg-white hover:bg-gray-900 dark:hover:bg-gray-100 text-white dark:text-black py-6 text-base font-semibold rounded-full transition-all duration-300 shadow-sm hover:shadow-md">
+                      <Button className="w-full bg-black dark:bg-white hover:bg-gray-900 dark:hover:bg-gray-100 text-white dark:text-black py-6 text-base font-semibold rounded-full transition-all duration-300 shadow-sm hover:shadow-md mt-auto">
                         Book Now
                       </Button>
                     </CardContent>
