@@ -2,10 +2,10 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { GA_TRACKING_ID, pageview, isGAEnabled } from '@/lib/gtag';
 
-export function GoogleAnalytics() {
+function AnalyticsTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -17,6 +17,11 @@ export function GoogleAnalytics() {
     pageview(url);
   }, [pathname, searchParams]);
 
+  return null;
+}
+
+export function GoogleAnalytics() {
+
   // Don't render scripts if GA is not configured
   if (!GA_TRACKING_ID) {
     return null;
@@ -24,6 +29,9 @@ export function GoogleAnalytics() {
 
   return (
     <>
+      <Suspense fallback={null}>
+        <AnalyticsTracker />
+      </Suspense>
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
