@@ -60,6 +60,93 @@ const experiences = [
           groupDiscount: 'Full private charter available (up to 12 pax)',
           departure: 'Departures from Padang port'
         }
+      },
+      {
+        name: 'Learn-to-Surf Fundamentals',
+        description: 'Immersive beginner program led by ISA-certified coaches—ideal for first-timers from Europe/US who want quick progress',
+        duration: '4 Days / 3 Nights',
+        price: { usd: 790, eur: 726, idr: 11850000 },
+        image: 'https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?w=1200&h=800&fit=crop',
+        highlights: [
+          '2 coached water sessions per day',
+          'Video analysis & theory class',
+          'Small groups (max 4:1)',
+          'Airport transfers (Padang) + inter-island boat',
+          '3 nights surf-camp lodging (shared)',
+          'Daily breakfast & lunch, hydration',
+          'Board rental & rash guard'
+        ],
+        bookingInfo: {
+          minGuests: 2,
+          advanceBooking: 'Suitable for swimmers comfortable in open water',
+          groupDiscount: null
+        }
+      },
+      {
+        name: 'Family Island Discovery',
+        description: 'Family-friendly blend of calm-beach sessions, wildlife walk, crafts, and safe lagoon snorkel',
+        duration: '6 Days / 5 Nights',
+        price: { usd: 1700, eur: 1564, idr: 25500000 },
+        image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&h=800&fit=crop',
+        highlights: [
+          'Protected-lagoon snorkeling & beach day',
+          'Village craft workshop (weaving / carving)',
+          'Gentle surf lessons for kids (optional)',
+          'Family bungalow or interconnecting rooms',
+          'All breakfasts + 3 dinners + fruit snacks',
+          'Private boat for half-day island hopping',
+          'Child life vests & snorkel sets'
+        ],
+        bookingInfo: {
+          minGuests: 1,
+          advanceBooking: 'Minimum 1 adult + 1 child',
+          groupDiscount: 'Child (6–12) -20%',
+          extra: 'Stroller-friendly options available'
+        }
+      },
+      {
+        name: 'Wellness & Waves Retreat',
+        description: 'Morning surf or paddle, afternoon yoga and breathwork, restorative spa focus',
+        duration: '7 Days / 6 Nights',
+        price: { usd: 1925, eur: 1770, idr: 28875000 },
+        image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&h=800&fit=crop',
+        highlights: [
+          'Daily vinyasa/yin yoga & breathwork',
+          'Optional ice-bath & massage add-ons',
+          'Sunrise paddle to mangroves',
+          'Boutique lodge room (A/C)',
+          'Nutritious half-board (breakfast & dinner)',
+          'Yoga shala access + mats/props',
+          'Guided surf sessions (intermediate-friendly)'
+        ],
+        bookingInfo: {
+          minGuests: 4,
+          advanceBooking: 'Min 4 participants per retreat week',
+          groupDiscount: null,
+          extra: 'Alcohol-free wellness menu available'
+        }
+      },
+      {
+        name: 'Photographer\'s Surf Odyssey',
+        description: 'Chase the best light and waves with a pro surf photographer; classroom and field workshops included',
+        duration: '8 Days / 7 Nights',
+        price: { usd: 2600, eur: 2392, idr: 39000000 },
+        image: 'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1200&h=800&fit=crop',
+        highlights: [
+          'Golden-hour boat shoots',
+          'Editing sessions (Lightroom/Photoshop)',
+          'Access to remote reef breaks',
+          'Speedboat support + fuel',
+          'Spot guiding + tide/wind briefings',
+          'Shared villa lodging + breakfasts',
+          '1x portfolio review per guest'
+        ],
+        bookingInfo: {
+          minGuests: null,
+          advanceBooking: 'Intermediate–advanced surfers/photogs',
+          groupDiscount: null,
+          extra: 'Bring water housing (rentals limited)'
+        }
       }
     ]
   }

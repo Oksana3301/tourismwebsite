@@ -56,6 +56,108 @@ const stays = [
       packages: 'Honeymoon & couple packages available',
       upgrade: 'Premium villa options'
     }
+  },
+  {
+    name: 'Boutique Eco-Lodge',
+    location: 'Mentawai Islands',
+    type: 'Eco-Lodge',
+    rating: 4.7,
+    price: { usd: 145, eur: 133, idr: 2175000 },
+    duration: '3–10 Nights',
+    perNight: true,
+    image: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1200&h=800&fit=crop',
+    amenities: ['WiFi', 'Solar power', 'Ocean view', 'Surf concierge'],
+    highlights: [
+      'Solar-powered bungalows with ocean views',
+      'Cliff-top sunset deck',
+      'Reef access via private steps',
+      'In-house surf concierge',
+      'Daily breakfast + afternoon tea',
+      'On-site water refill',
+      'Shared boat to main surf break (once/day)'
+    ],
+    bookingInfo: {
+      minNights: 3,
+      packages: 'Private round-trip transfer add-on',
+      upgrade: 'DBL share accommodation'
+    }
+  },
+  {
+    name: 'Budget Homestay Near Breaks',
+    location: 'Mentawai Islands',
+    type: 'Homestay',
+    rating: 4.5,
+    price: { usd: 65, eur: 60, idr: 975000 },
+    duration: '2–14 Nights',
+    perNight: true,
+    image: 'https://images.unsplash.com/photo-1568495248636-6432b97bd949?w=1200&h=800&fit=crop',
+    amenities: ['WiFi', 'Fan room', 'Board storage', 'Laundry'],
+    highlights: [
+      'Simple, clean rooms run by local family',
+      '10–15 min walk to beach break',
+      'Community dinners',
+      'Board rack & repair corner',
+      'Fan room, mosquito net',
+      'Breakfast included (local style)',
+      'Laundry (small fee)'
+    ],
+    bookingInfo: {
+      minNights: 2,
+      packages: 'Great value for long-stay surfers',
+      upgrade: 'Cashless payments accepted'
+    }
+  },
+  {
+    name: 'Luxury Beachfront Villa + Private Chef',
+    location: 'Mentawai Islands',
+    type: 'Private Villa',
+    rating: 5.0,
+    price: { usd: 1290, eur: 1186, idr: 19350000 },
+    duration: '5–7 Nights',
+    perNight: true,
+    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&h=800&fit=crop',
+    amenities: ['Private pool', 'Private chef', 'Boat dock', 'Concierge'],
+    highlights: [
+      'Full-service private villa for groups/families',
+      'Infinity pool & sunken lounge',
+      'Private dock & tender boat',
+      'Chef-curated Western/Asian menu',
+      'Daily breakfast + private chef service',
+      'Housekeeping & concierge',
+      '1x boat trip to nearby island (per stay)',
+      'Sleeps 6–8 guests'
+    ],
+    bookingInfo: {
+      minNights: 5,
+      packages: 'Security deposit required',
+      upgrade: 'Add-on: surf guide / yoga teacher'
+    }
+  },
+  {
+    name: 'Private Island Micro-Resort',
+    location: 'Mentawai Islands',
+    type: 'All-Inclusive Resort',
+    rating: 5.0,
+    price: { usd: 440, eur: 405, idr: 6600000 },
+    duration: '4–7 Nights',
+    perNight: true,
+    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=800&fit=crop',
+    amenities: ['All-inclusive', 'Private island', 'House reef', 'Catamaran'],
+    highlights: [
+      'Small-key resort occupying its own sand-fringed islet',
+      'Only 6–10 keys for exclusivity',
+      'House-reef snorkeling steps from room',
+      'Sunset catamaran sail (weekly)',
+      'All meals & non-alcoholic beverages',
+      'Round-trip transfers from Padang',
+      'Daily guided activity (rotating schedule)',
+      'Ideal for honeymoons or special occasions'
+    ],
+    bookingInfo: {
+      minNights: 4,
+      packages: 'Adults 12+ only on select weeks',
+      upgrade: 'All-inclusive pricing'
+    }
   }
 ];
 
