@@ -1,13 +1,17 @@
 /** @type {import('next').NextConfig} */
+
+// Check if we're building for production
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   // Performance optimizations
   reactStrictMode: true,
   
-  // Enable static export for Firebase Hosting
-  output: 'export',
+  // Enable static export for Firebase Hosting (only in production builds)
+  ...(isProd && { output: 'export' }),
   
   // Trailing slash for better compatibility with Firebase Hosting
-  trailingSlash: true,
+  ...(isProd && { trailingSlash: true }),
   
   // Ignore ESLint errors during build (warnings won't block deployment)
   eslint: {
