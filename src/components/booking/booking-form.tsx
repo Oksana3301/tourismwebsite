@@ -73,7 +73,7 @@ const BookingForm = ({ destination, price, title, onClose }: BookingFormProps) =
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4" suppressHydrationWarning>
         <div>
           <Label htmlFor="date" className="text-sm font-medium text-gray-700">
             Travel Date
@@ -141,7 +141,7 @@ const BookingForm = ({ destination, price, title, onClose }: BookingFormProps) =
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4" suppressHydrationWarning>
         <div>
           <Label htmlFor="email" className="text-sm font-medium text-gray-700">
             Email Address
@@ -197,7 +197,7 @@ const BookingForm = ({ destination, price, title, onClose }: BookingFormProps) =
     <div className="space-y-6">
       <div>
         <Label className="text-sm font-medium text-gray-700">Payment Method</Label>
-        <div className="mt-2 grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <div className="mt-2 grid grid-cols-1 gap-3 sm:grid-cols-2" suppressHydrationWarning>
           <div className="flex items-center">
             <input
               id="payment-card"

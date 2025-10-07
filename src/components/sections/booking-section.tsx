@@ -87,7 +87,7 @@ const BookingSection = () => {
                 <div className="space-y-6">
                   <h3 className="text-2xl font-bold text-black dark:text-white mb-6">Trip Details</h3>
                   
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid md:grid-cols-2 gap-6" suppressHydrationWarning>
                     <div className="space-y-2">
                       <Label htmlFor="destination" className="text-sm font-semibold text-black dark:text-white">
                         Destination
@@ -150,12 +150,12 @@ const BookingSection = () => {
                 <div className="space-y-6 pt-6 border-t border-gray-200 dark:border-gray-800">
                   <h3 className="text-2xl font-bold text-black dark:text-white mb-6">Personal Information</h3>
                   
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid md:grid-cols-2 gap-6" suppressHydrationWarning>
                     <div className="space-y-2 md:col-span-2">
                       <Label htmlFor="name" className="text-sm font-semibold text-black dark:text-white">
                         Full Name
                       </Label>
-                      <div className="relative" suppressHydrationWarning>
+                      <div className="relative">
                         <User className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
                         <Input
                           id="name"
@@ -173,7 +173,7 @@ const BookingSection = () => {
                       <Label htmlFor="email" className="text-sm font-semibold text-black dark:text-white">
                         Email Address
                       </Label>
-                      <div className="relative" suppressHydrationWarning>
+                      <div className="relative">
                         <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
                         <Input
                           id="email"
@@ -191,7 +191,7 @@ const BookingSection = () => {
                       <Label htmlFor="phone" className="text-sm font-semibold text-black dark:text-white">
                         Phone Number
                       </Label>
-                      <div className="relative" suppressHydrationWarning>
+                      <div className="relative">
                         <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
                         <Input
                           id="phone"
