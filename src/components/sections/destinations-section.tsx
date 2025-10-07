@@ -200,15 +200,15 @@ const DestinationsSection = () => {
                       </div>
                     </div>
                     
-                    <div className="text-white drop-shadow-lg">
-                      <h3 className="text-2xl font-bold mb-2 drop-shadow-2xl">{destination.title}</h3>
-                      <div className="flex items-center gap-4 text-sm drop-shadow-md">
+                    <div className="text-white">
+                      <h3 className="text-2xl font-bold mb-2 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">{destination.title}</h3>
+                      <div className="flex items-center gap-4 text-sm text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                         <div className="flex items-center gap-1">
-                          <Clock className="h-4 w-4" />
+                          <Clock className="h-4 w-4 text-white" />
                           <span>{destination.duration}</span>
                         </div>
                         <div className="flex items-center gap-1">
-                          <Users className="h-4 w-4" />
+                          <Users className="h-4 w-4 text-white" />
                           <span>{destination.groupSize}</span>
                         </div>
                       </div>
