@@ -5,6 +5,7 @@ import './performance.css';
 import { Providers } from '@/components/providers/providers';
 import WhatsAppFloatButton from '@/components/layout/whatsapp-float-button';
 import { HomeSEO } from '@/components/seo/seo';
+import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
 
 export const metadata: Metadata = {
   title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
@@ -21,12 +22,19 @@ export const metadata: Metadata = {
     title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
     description: 'Plan, book, and glide across West Sumatra. Experience adventure tours, surf trips, and cultural experiences.',
     siteName: 'SumateraWay',
+    images: [{
+      url: 'https://sumateraway.com/og-image.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'SumateraWay - West Sumatra Trip Planner'
+    }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
     description: 'Plan, book, and glide across West Sumatra. Experience adventure tours, surf trips, and cultural experiences.',
     creator: '@sumateraway',
+    site: '@sumateraway',
     images: ['https://sumateraway.com/og-image.jpg'],
   },
   icons: {
@@ -82,11 +90,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
                  "@context": "https://schema.org",
-                 "@type": "TravelAgency",
-                 "name": "SumateraWay",
-                 "url": "https://sumateraway.com",
-                 "logo": "https://sumateraway.com/logo.png",
-                 "image": "https://sumateraway.com/og-image.jpg",
+               "@type": "TravelAgency",
+               "name": "SumateraWay",
+               "url": "https://sumateraway.com",
+               "logo": "https://sumateraway.com/logo.png",
+               "image": "https://sumateraway.com/og-image.jpg",
               "description": "Plan, book, and glide across West Sumatra. Experience adventure tours, surf trips, cultural experiences, and eco-friendly accommodations.",
               "address": {
                 "@type": "PostalAddress",
@@ -113,6 +121,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-inter">
+        {/* Google Analytics */}
+        <GoogleAnalytics />
+        
         <Providers>
           {children}
           <WhatsAppFloatButton />
