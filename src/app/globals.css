@@ -74,42 +74,42 @@
   --radius-full: 9999px;
   --radius: 1.25rem;
   
-  /* Pure Flighty Colors */
-  --background: #ffffff;
-  --foreground: #000000;
-  --card: #ffffff;
-  --card-foreground: #000000;
-  --popover: #ffffff;
-  --popover-foreground: #000000;
-  --primary: #000000;
-  --primary-foreground: #ffffff;
-  --secondary: #f5f5f5;
-  --secondary-foreground: #000000;
-  --muted: #f5f5f5;
-  --muted-foreground: #737373;
-  --accent: #f5f5f5;
-  --accent-foreground: #000000;
+  /* Ocean-Inspired Color Palette */
+  --background: #F7FAFC;
+  --foreground: #1E293B;
+  --card: #F7FAFC;
+  --card-foreground: #1E293B;
+  --popover: #F7FAFC;
+  --popover-foreground: #1E293B;
+  --primary: #0EA5E9;
+  --primary-foreground: #F7FAFC;
+  --secondary: #E2E8F0;
+  --secondary-foreground: #1E293B;
+  --muted: #E2E8F0;
+  --muted-foreground: #64748B;
+  --accent: #38BDF8;
+  --accent-foreground: #1E293B;
   --destructive: #ef4444;
-  --border: #e5e5e5;
-  --input: #e5e5e5;
-  --ring: #000000;
+  --border: #CBD5E1;
+  --input: #CBD5E1;
+  --ring: #0EA5E9;
   
   /* Charts */
-  --chart-1: #3b82f6;
-  --chart-2: #10b981;
+  --chart-1: #0EA5E9;
+  --chart-2: #10B981;
   --chart-3: #f59e0b;
   --chart-4: #8b5cf6;
   --chart-5: #ec4899;
   
   /* Sidebar */
-  --sidebar: #ffffff;
-  --sidebar-foreground: #000000;
-  --sidebar-primary: #000000;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f5f5f5;
-  --sidebar-accent-foreground: #000000;
-  --sidebar-border: #e5e5e5;
-  --sidebar-ring: #000000;
+  --sidebar: #F7FAFC;
+  --sidebar-foreground: #1E293B;
+  --sidebar-primary: #0EA5E9;
+  --sidebar-primary-foreground: #F7FAFC;
+  --sidebar-accent: #E2E8F0;
+  --sidebar-accent-foreground: #1E293B;
+  --sidebar-border: #CBD5E1;
+  --sidebar-ring: #0EA5E9;
   
   /* Typography Scale (Apple SF Pro System) */
   --font-size-xs: 0.75rem;      /* 12px */
@@ -135,43 +135,43 @@
   --line-height-loose: 2;
 }
 
-/* Dark Theme (Apple/Flighty Style) */
+/* Dark Theme (Ocean-Inspired) */
 .dark {
-  --background: #000000;
-  --foreground: #ffffff;
-  --card: #0a0a0a;
-  --card-foreground: #ffffff;
-  --popover: #0a0a0a;
-  --popover-foreground: #ffffff;
-  --primary: #ffffff;
-  --primary-foreground: #000000;
-  --secondary: #1a1a1a;
-  --secondary-foreground: #ffffff;
-  --muted: #1a1a1a;
-  --muted-foreground: #a3a3a3;
-  --accent: #1a1a1a;
-  --accent-foreground: #ffffff;
+  --background: #0F172A;
+  --foreground: #F1F5F9;
+  --card: #1E293B;
+  --card-foreground: #F1F5F9;
+  --popover: #1E293B;
+  --popover-foreground: #F1F5F9;
+  --primary: #0EA5E9;
+  --primary-foreground: #0F172A;
+  --secondary: #1E293B;
+  --secondary-foreground: #F1F5F9;
+  --muted: #1E293B;
+  --muted-foreground: #94A3B8;
+  --accent: #38BDF8;
+  --accent-foreground: #F1F5F9;
   --destructive: #ef4444;
-  --border: #262626;
-  --input: #262626;
-  --ring: #ffffff;
+  --border: #334155;
+  --input: #334155;
+  --ring: #0EA5E9;
   
   /* Charts Dark */
-  --chart-1: #60a5fa;
+  --chart-1: #38BDF8;
   --chart-2: #34d399;
   --chart-3: #fbbf24;
   --chart-4: #a78bfa;
   --chart-5: #f472b6;
   
   /* Sidebar Dark */
-  --sidebar: #000000;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #ffffff;
-  --sidebar-primary-foreground: #000000;
-  --sidebar-accent: #1a1a1a;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #262626;
-  --sidebar-ring: #ffffff;
+  --sidebar: #0F172A;
+  --sidebar-foreground: #F1F5F9;
+  --sidebar-primary: #0EA5E9;
+  --sidebar-primary-foreground: #0F172A;
+  --sidebar-accent: #1E293B;
+  --sidebar-accent-foreground: #F1F5F9;
+  --sidebar-border: #334155;
+  --sidebar-ring: #0EA5E9;
 }
 
 /* ============================================
@@ -288,14 +288,14 @@
     opacity: 0.8;
   }
   
-  /* Selection (Apple Blue) */
+  /* Selection (Ocean Blue) */
   ::selection {
-    background-color: rgba(0, 122, 255, 0.2);
+    background-color: rgba(14, 165, 233, 0.2);
     color: var(--foreground);
   }
   
   .dark ::selection {
-    background-color: rgba(10, 132, 255, 0.3);
+    background-color: rgba(14, 165, 233, 0.3);
   }
   
   /* Performance: Only transition interactive elements (see performance.css) */
@@ -426,17 +426,17 @@
     }
   }
   
-  /* Glass Morphism (Apple Style) */
+  /* Glass Morphism (Ocean Style) */
   .glass {
-    background: rgba(255, 255, 255, 0.72);
+    background: rgba(247, 250, 252, 0.72);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(203, 213, 225, 0.4);
   }
   
   .dark .glass {
-    background: rgba(10, 10, 10, 0.72);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(15, 23, 42, 0.72);
+    border: 1px solid rgba(51, 65, 85, 0.4);
   }
   
   /* Hover Effects (Apple Quality) */
@@ -466,7 +466,7 @@
   
   /* Gradient Text */
   .gradient-text {
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg, #0EA5E9 0%, #10B981 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

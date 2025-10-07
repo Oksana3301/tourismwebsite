@@ -5,7 +5,7 @@ export interface WhatsAppMessageOptions {
 }
 
 export class WhatsAppService {
-  private static readonly DEFAULT_PHONE_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '6281234567890';
+  private static readonly DEFAULT_PHONE_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '62895610524580';
   private static readonly BASE_URL = 'https://wa.me';
 
   /**

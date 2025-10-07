@@ -49,9 +49,9 @@ const Navigation = () => {
               <div className="w-10 h-10 bg-black dark:bg-white rounded-full flex items-center justify-center shadow-sm group-hover:shadow-md transition-all">
                 <Waves className="h-5 w-5 text-white dark:text-black" />
               </div>
-              <span className="text-xl font-bold text-black dark:text-white tracking-tight" style={{ fontWeight: 700 }}>
-                Wisata Padang
-              </span>
+          <span className="text-xl font-bold text-black dark:text-white tracking-tight" style={{ fontWeight: 700 }}>
+            SumateraWay
+          </span>
             </motion.div>
           </Link>
 
@@ -110,7 +110,7 @@ const Navigation = () => {
                       <Waves className="h-5 w-5 text-white dark:text-black" />
                     </div>
                     <span className="text-xl font-bold text-black dark:text-white" style={{ fontWeight: 700 }}>
-                      Wisata Padang
+                      SumatraWay
                     </span>
                   </div>
 

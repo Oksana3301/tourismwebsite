@@ -139,7 +139,7 @@ interface WhatsAppPhoneProps {
 }
 
 export function WhatsAppPhone({ phoneNumber, className = '' }: WhatsAppPhoneProps) {
-  const formattedNumber = phoneNumber || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+62 812-3456-7890';
+  const formattedNumber = phoneNumber || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+62 895-6105-24580';
   
   return (
     <div className={`flex items-center space-x-2 ${className}`}>

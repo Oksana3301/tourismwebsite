@@ -114,7 +114,7 @@ const PadangPage = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  onClick={() => window.open('https://wa.me/6281234567890', '_blank')}
+                  onClick={() => window.open('https://wa.me/62895610524580', '_blank')}
                   className="px-8 py-4 text-lg font-semibold border-2 border-green-600 text-green-600 hover:bg-green-50"
                 >
                   WhatsApp Inquiry
@@ -139,7 +139,7 @@ const PadangPage = () => {
                   <Star className="h-8 w-8 text-green-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Cultural Richness</h3>
-                <p className="text-gray-600">Experience authentic Minangkabau traditions</p>
+                <p className="text-muted-foreground">Experience authentic Minangkabau traditions</p>
               </motion.div>
               
               <motion.div
@@ -153,7 +153,7 @@ const PadangPage = () => {
                   <Utensils className="h-8 w-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Culinary Delights</h3>
-                <p className="text-gray-600">Taste world-famous Padang cuisine</p>
+                <p className="text-muted-foreground">Taste world-famous Padang cuisine</p>
               </motion.div>
               
               <motion.div
@@ -167,7 +167,7 @@ const PadangPage = () => {
                   <Building className="h-8 w-8 text-purple-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Historical Sites</h3>
-                <p className="text-gray-600">Explore ancient palaces and landmarks</p>
+                <p className="text-muted-foreground">Explore ancient palaces and landmarks</p>
               </motion.div>
             </div>
 
@@ -176,26 +176,26 @@ const PadangPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Minangkabau Culture</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     Padang is the heart of Minangkabau culture, known for its matrilineal society, unique architecture, 
                     and rich traditions that have been preserved for centuries.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">World-Class Cuisine</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     Renowned worldwide for its spicy and flavorful dishes, Padang cuisine offers an unforgettable culinary adventure.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Warm Hospitality</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     Experience the famous Minangkabau hospitality - friendly, welcoming, and always ready to share their culture.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Natural Beauty</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     From stunning beaches to lush highlands, Padang offers diverse landscapes waiting to be explored.
                   </p>
                 </div>
@@ -217,7 +217,7 @@ const PadangPage = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Cultural <span className="text-green-600">Sites</span> & Landmarks
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Discover the historical and cultural treasures of Padang and surrounding areas
               </p>
             </motion.div>
@@ -240,13 +240,13 @@ const PadangPage = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                       <div className="absolute bottom-4 left-4 text-white">
-                        <h3 className="text-2xl font-bold mb-1">{site.name}</h3>
-                        <Badge variant="secondary">{site.category}</Badge>
+                        <h3 className="text-2xl font-bold mb-1 drop-shadow-2xl">{site.name}</h3>
+                        <Badge variant="secondary" className="drop-shadow-lg">{site.category}</Badge>
                       </div>
                     </div>
                     
                     <CardContent className="p-6">
-                      <p className="text-gray-600 mb-4">{site.description}</p>
+                      <p className="text-muted-foreground mb-4">{site.description}</p>
                       <Button className="w-full bg-green-600 hover:bg-green-700">
                         Learn More
                       </Button>
@@ -271,7 +271,7 @@ const PadangPage = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Culinary <span className="text-blue-600">Experiences</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Taste the authentic flavors of Padang through hands-on experiences
               </p>
             </motion.div>
@@ -297,14 +297,14 @@ const PadangPage = () => {
                     </CardHeader>
                     
                     <CardContent className="space-y-4">
-                      <p className="text-gray-600 text-sm">{experience.description}</p>
+                      <p className="text-muted-foreground text-sm">{experience.description}</p>
                       
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-2 text-sm">Includes:</h4>
                         <ul className="space-y-1">
                           {experience.includes.map((item, i) => (
-                            <li key={i} className="flex items-center space-x-2 text-xs text-gray-600">
-                              <div className="w-1 h-1 bg-blue-500 rounded-full" />
+                            <li key={i} className="flex items-center space-x-2 text-xs text-muted-foreground">
+                              <div className="w-1 h-1 bg-primary rounded-full" />
                               <span>{item}</span>
                             </li>
                           ))}
@@ -335,7 +335,7 @@ const PadangPage = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Choose Your <span className="text-green-600">Package</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 All-inclusive cultural adventures tailored to your interests
               </p>
             </motion.div>
@@ -370,7 +370,7 @@ const PadangPage = () => {
                         <h4 className="font-semibold text-gray-900 mb-3">Includes:</h4>
                         <ul className="space-y-2">
                           {pkg.includes.map((item, i) => (
-                            <li key={i} className="flex items-center space-x-2 text-sm text-gray-600">
+                            <li key={i} className="flex items-center space-x-2 text-sm text-muted-foreground">
                               <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
                               <span>{item}</span>
                             </li>
@@ -382,8 +382,8 @@ const PadangPage = () => {
                         <h4 className="font-semibold text-gray-900 mb-3">Highlights:</h4>
                         <ul className="space-y-2">
                           {pkg.highlights.map((highlight, i) => (
-                            <li key={i} className="flex items-center space-x-2 text-sm text-gray-600">
-                              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                            <li key={i} className="flex items-center space-x-2 text-sm text-muted-foreground">
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full" />
                               <span>{highlight}</span>
                             </li>
                           ))}

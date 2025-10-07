@@ -34,8 +34,8 @@ export interface SEOConfig {
 }
 
 export const defaultSEOConfig: SEOConfig = {
-  title: 'WisataPadang - Adventure Tours in West Sumatra',
-  description: 'Experience the best of Mentawai surfing and Padang culture with our expert-guided tours. Book your adventure today!',
+  title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
+  description: 'Plan, book, and glide across West Sumatra. Experience the best of Mentawai surfing and Padang culture with our expert-guided tours.',
   keywords: [
     'Mentawai surf',
     'Padang culture',
@@ -49,32 +49,32 @@ export const defaultSEOConfig: SEOConfig = {
     'surf Mentawai',
   ],
   openGraph: {
-    title: 'WisataPadang - Adventure Tours in West Sumatra',
-    description: 'Experience the best of Mentawai surfing and Padang culture with our expert-guided tours. Book your adventure today!',
+    title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
+    description: 'Plan, book, and glide across West Sumatra. Experience the best of Mentawai surfing and Padang culture with our expert-guided tours.',
     images: [
       '/images/og-image.jpg',
       '/images/og-image-2.jpg',
     ],
-    url: 'https://wisatapadang.com',
-    siteName: 'WisataPadang',
+    url: 'https://sumateraway.com',
+    siteName: 'SumateraWay',
     locale: 'en_ID',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'WisataPadang - Adventure Tours in West Sumatra',
-    description: 'Experience the best of Mentawai surfing and Padang culture with our expert-guided tours. Book your adventure today!',
+    title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
+    description: 'Plan, book, and glide across West Sumatra. Experience the best of Mentawai surfing and Padang culture with our expert-guided tours.',
     images: [
       '/images/twitter-image.jpg',
     ],
-    site: '@wisatapadang',
-    creator: '@wisatapadang',
+    site: '@sumateraway',
+    creator: '@sumateraway',
   },
   alternates: {
-    canonical: 'https://wisatapadang.com',
+    canonical: 'https://sumateraway.com',
     languages: {
-      'en-US': 'https://wisatapadang.com',
-      'id-ID': 'https://wisatapadang.com/id',
+      'en-US': 'https://sumateraway.com',
+      'id-ID': 'https://sumateraway.com/id',
     },
   },
   robots: {
@@ -142,8 +142,8 @@ export function generateMetadata(config: Partial<SEOConfig>): Metadata {
 // Page-specific SEO configurations
 export const pageSEOConfigs = {
   home: {
-    title: 'WisataPadang - Adventure Tours in West Sumatra',
-    description: 'Experience the best of Mentawai surfing and Padang culture with our expert-guided tours. Book your adventure today!',
+    title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
+    description: 'Plan, book, and glide across West Sumatra. Experience the best of Mentawai surfing and Padang culture with our expert-guided tours.',
   },
   mentawai: {
     title: 'Mentawai Surf Tours - World-Class Waves in West Sumatra',
@@ -170,19 +170,19 @@ export const pageSEOConfigs = {
     description: 'Create your perfect West Sumatra adventure with our customizable tour itineraries. Tailored to your interests and schedule.',
   },
   tripPlanner: {
-    title: 'Trip Planner - Create Your West Sumatra Adventure',
-    description: 'Design your perfect West Sumatra itinerary with our interactive trip planner. Add activities, customize your schedule, and save your plan.',
+    title: 'Trip Planner - SumateraWay',
+    description: 'Plan, book, and glide across West Sumatra. Design your perfect itinerary with our interactive trip planner.',
   },
   faq: {
-    title: 'Frequently Asked Questions - WisataPadang',
+    title: 'Frequently Asked Questions - SumateraWay',
     description: 'Find answers to common questions about our tours, booking process, and travel to West Sumatra.',
   },
   terms: {
-    title: 'Terms & Conditions - WisataPadang',
-    description: 'Please read our terms and conditions before booking your tour with WisataPadang.',
+    title: 'Terms & Conditions - SumateraWay',
+    description: 'Please read our terms and conditions before booking your tour with SumateraWay.',
   },
   privacy: {
-    title: 'Privacy Policy - WisataPadang',
-    description: 'Learn how we protect your personal information when you book with WisataPadang.',
+    title: 'Privacy Policy - SumateraWay',
+    description: 'Learn how we protect your personal information when you book with SumateraWay.',
   },
 };

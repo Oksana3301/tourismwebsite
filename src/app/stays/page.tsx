@@ -2,9 +2,9 @@
 
 import PageWrapper from '@/components/layout/page-wrapper';
 import { motion } from 'framer-motion';
-import { Building, Star, MapPin, Wifi, Car, Utensils, WifiOff } from 'lucide-react';
+import { Building, Star, MapPin, Wifi, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { StaysSEOOptimization } from '@/components/seo/seo';
 
@@ -15,7 +15,7 @@ const stays = [
     type: 'Surf Resort',
     rating: 4.9,
     price: { usd: 299, eur: 275, idr: 4500000 },
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200&h=800&fit=crop',
     amenities: ['WiFi', 'Restaurant', 'Surfboard rental', 'Airport transfer'],
     highlights: ['Beachfront location', 'Professional surf guides', 'All-inclusive packages']
   },
@@ -25,7 +25,7 @@ const stays = [
     type: 'Boutique Hotel',
     rating: 4.7,
     price: { usd: 89, eur: 82, idr: 1350000 },
-    image: 'https://images.unsplash.com/photo-1542601906-925d9c3a4d52?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=800&fit=crop',
     amenities: ['WiFi', 'Restaurant', 'Swimming pool', 'Spa'],
     highlights: ['Traditional architecture', 'Cultural performances', 'Central location']
   },
@@ -35,7 +35,7 @@ const stays = [
     type: 'Mountain Resort',
     rating: 4.8,
     price: { usd: 129, eur: 118, idr: 1950000 },
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1200&h=800&fit=crop',
     amenities: ['WiFi', 'Restaurant', 'Mountain view', 'Hiking trails'],
     highlights: ['Cool climate', 'Panoramic views', 'Nature activities']
   },
@@ -45,7 +45,7 @@ const stays = [
     type: 'Beach Bungalow',
     rating: 4.6,
     price: { usd: 69, eur: 63, idr: 1050000 },
-    image: 'https://images.unsplash.com/photo-1542601906-925d9c3a4d52?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1200&h=800&fit=crop',
     amenities: ['WiFi', 'Kitchen', 'Beach access', 'Bicycle rental'],
     highlights: ['Direct beach access', 'Local atmosphere', 'Budget-friendly']
   },
@@ -55,7 +55,7 @@ const stays = [
     type: 'Private Villa',
     rating: 5.0,
     price: { usd: 599, eur: 545, idr: 9000000 },
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&h=800&fit=crop',
     amenities: ['WiFi', 'Private pool', 'Butler service', 'Helipad'],
     highlights: ['Ultimate privacy', 'Personal chef', 'Luxury amenities']
   },
@@ -65,7 +65,7 @@ const stays = [
     type: 'Homestay',
     rating: 4.5,
     price: { usd: 35, eur: 32, idr: 525000 },
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1568495248636-6432b97bd949?w=1200&h=800&fit=crop',
     amenities: ['WiFi', 'Home-cooked meals', 'Cultural activities'],
     highlights: ['Authentic experience', 'Local family', 'Cultural immersion']
   }
@@ -77,69 +77,80 @@ const StaysPage = () => {
       <StaysSEOOptimization />
       <PageWrapper>
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-teal-900/20 to-blue-900/20"></div>
-            <div className="absolute inset-0 bg-[url('/images/stays/hotel.svg')] bg-cover bg-center bg-no-repeat opacity-30"></div>
+        <section className="relative pt-32 pb-16 bg-gradient-to-b from-background via-secondary/30 to-background transition-colors duration-300 overflow-hidden">
+          {/* Decorative Background Elements */}
+          <div className="absolute inset-0 pointer-events-none opacity-5 dark:opacity-3">
+            <div className="absolute top-20 right-10 w-64 h-64 rounded-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=600&auto=format&fit=crop"
+                alt="Decoration"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="absolute bottom-20 left-10 w-64 h-64 rounded-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop"
+                alt="Decoration"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=800&auto=format&fit=crop"
+                alt="Decoration"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
           </div>
 
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+            {/* Section Header - Apple Style */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="text-center mb-24"
             >
-              <Badge className="mb-6 bg-teal-600 text-white">
-                <Building className="mr-2 h-4 w-4" />
-                Perfect Stays
-              </Badge>
-              
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
-                Find Your <span className="text-teal-600">Perfect Stay</span>
-              </h1>
-              
-              <p className="text-xl sm:text-2xl text-gray-700 mb-10 max-w-2xl mx-auto">
+              <h2 
+                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-black dark:text-white mb-6 tracking-tight leading-tight"
+                style={{ fontWeight: 900, letterSpacing: '-0.05em' }}
+              >
+                Find Your Perfect Stay
+              </h2>
+              <p 
+                className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                style={{ letterSpacing: '-0.02em' }}
+              >
                 From luxury resorts to authentic homestays, discover accommodations that match your travel style
               </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 text-lg font-semibold">
-                  Browse All Stays
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  onClick={() => window.open('https://wa.me/6281234567890', '_blank')}
-                  className="px-8 py-4 text-lg font-semibold border-2 border-teal-600 text-teal-600 hover:bg-teal-50"
-                >
-                  WhatsApp Inquiry
-                </Button>
-              </div>
             </motion.div>
           </div>
         </section>
 
         {/* Filter Section */}
-        <section className="py-12 bg-gray-50">
+        <section className="py-12 bg-white dark:bg-gray-900 border-y border-gray-200 dark:border-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button variant="outline" className="border-2 border-teal-600 text-teal-600 hover:bg-teal-50">
+              <Button variant="outline" className="rounded-full border-2 border-black dark:border-white bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 px-6">
                 All Stays
               </Button>
-              <Button variant="outline" className="border-2 border-gray-300 text-gray-700 hover:bg-gray-100">
+              <Button variant="outline" className="rounded-full border-2 border-gray-400 dark:border-gray-600 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-500 dark:hover:border-gray-500 px-6">
                 Surf Resorts
               </Button>
-              <Button variant="outline" className="border-2 border-gray-300 text-gray-700 hover:bg-gray-100">
+              <Button variant="outline" className="rounded-full border-2 border-gray-400 dark:border-gray-600 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-500 dark:hover:border-gray-500 px-6">
                 Boutique Hotels
               </Button>
-              <Button variant="outline" className="border-2 border-gray-300 text-gray-700 hover:bg-gray-100">
+              <Button variant="outline" className="rounded-full border-2 border-gray-400 dark:border-gray-600 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-500 dark:hover:border-gray-500 px-6">
                 Mountain Resorts
               </Button>
-              <Button variant="outline" className="border-2 border-gray-300 text-gray-700 hover:bg-gray-100">
+              <Button variant="outline" className="rounded-full border-2 border-gray-400 dark:border-gray-600 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-500 dark:hover:border-gray-500 px-6">
                 Beach Bungalows
               </Button>
-              <Button variant="outline" className="border-2 border-gray-300 text-gray-700 hover:bg-gray-100">
+              <Button variant="outline" className="rounded-full border-2 border-gray-400 dark:border-gray-600 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-500 dark:hover:border-gray-500 px-6">
                 Homestays
               </Button>
             </div>
@@ -147,7 +158,7 @@ const StaysPage = () => {
         </section>
 
         {/* Stays Grid */}
-        <section className="py-20">
+        <section className="py-20 bg-gradient-to-b from-white via-gray-50/30 to-white dark:from-gray-900 dark:via-gray-800/30 dark:to-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {stays.map((stay, index) => (
@@ -159,23 +170,25 @@ const StaysPage = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="group"
                 >
-                  <Card className="h-full overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300">
-                    <div className="relative h-64 overflow-hidden">
-                      <div 
-                        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                        style={{ backgroundImage: `url(${stay.image})` }}
+                  <Card className="h-full overflow-hidden bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 rounded-2xl">
+                    <div className="relative h-64 overflow-hidden bg-gray-200 dark:bg-gray-800">
+                      <img
+                        src={stay.image}
+                        alt={stay.name}
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                       <div className="absolute top-4 left-4">
-                        <Badge variant="secondary">{stay.type}</Badge>
+                        <Badge className="bg-black/90 text-white border-0 backdrop-blur-sm">{stay.type}</Badge>
                       </div>
-                      <div className="absolute top-4 right-4 flex items-center space-x-1 bg-white/90 px-2 py-1 rounded-full">
-                        <Star className="h-4 w-4 text-yellow-500 fill-current" />
-                        <span className="text-sm font-medium">{stay.rating}</span>
+                      <div className="absolute top-4 right-4 flex items-center space-x-1 bg-black/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                        <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
+                        <span className="text-sm font-semibold text-white">{stay.rating}</span>
                       </div>
-                      <div className="absolute bottom-4 left-4 text-white">
-                        <h3 className="text-xl font-bold mb-1">{stay.name}</h3>
-                        <div className="flex items-center space-x-1">
+                      <div className="absolute bottom-4 left-4 right-4 text-white">
+                        <h3 className="text-xl font-bold mb-2 drop-shadow-2xl">{stay.name}</h3>
+                        <div className="flex items-center space-x-1 drop-shadow-lg">
                           <MapPin className="h-4 w-4" />
                           <span className="text-sm">{stay.location}</span>
                         </div>
@@ -183,50 +196,50 @@ const StaysPage = () => {
                     </div>
                     
                     <CardContent className="p-6">
-                      <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200 dark:border-gray-800">
                         <div>
-                          <span className="text-2xl font-bold text-gray-900">
+                          <span className="text-3xl font-bold text-gray-900 dark:text-white">
                             ${stay.price.usd}
                           </span>
-                          <span className="text-sm text-gray-500">/night</span>
+                          <span className="text-sm text-gray-500 dark:text-gray-400">/night</span>
                         </div>
-                        <div className="flex space-x-1 text-xs text-gray-500">
+                        <div className="flex space-x-1 text-xs text-gray-500 dark:text-gray-400">
                           <span>€{stay.price.eur}</span>
                           <span>•</span>
-                          <span>IDR {stay.price.idr.toLocaleString('en-US')}</span>
+                          <span>Rp {stay.price.idr.toLocaleString('id-ID')}</span>
                         </div>
                       </div>
                       
                       <div className="mb-4">
-                        <h4 className="font-semibold text-gray-900 mb-2 text-sm">Amenities:</h4>
+                        <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-sm uppercase tracking-wide">Amenities:</h4>
                         <div className="flex flex-wrap gap-2">
                           {stay.amenities.slice(0, 3).map((amenity, i) => (
-                            <div key={i} className="flex items-center space-x-1 bg-gray-100 px-2 py-1 rounded text-xs">
-                              {amenity === 'WiFi' ? <Wifi className="h-3 w-3" /> : <WifiOff className="h-3 w-3" />}
+                            <div key={i} className="flex items-center space-x-1 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-full text-xs text-gray-700 dark:text-gray-300">
+                              {amenity === 'WiFi' ? <Wifi className="h-3 w-3" /> : <Check className="h-3 w-3" />}
                               <span>{amenity}</span>
                             </div>
                           ))}
                           {stay.amenities.length > 3 && (
-                            <div className="bg-gray-100 px-2 py-1 rounded text-xs">
+                            <div className="bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-full text-xs text-gray-700 dark:text-gray-300 font-medium">
                               +{stay.amenities.length - 3} more
                             </div>
                           )}
                         </div>
                       </div>
                       
-                      <div className="mb-4">
-                        <h4 className="font-semibold text-gray-900 mb-2 text-sm">Highlights:</h4>
-                        <ul className="space-y-1">
+                      <div className="mb-6">
+                        <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-sm uppercase tracking-wide">Highlights:</h4>
+                        <ul className="space-y-2">
                           {stay.highlights.map((highlight, i) => (
-                            <li key={i} className="flex items-center space-x-2 text-xs text-gray-600">
-                              <div className="w-1 h-1 bg-teal-500 rounded-full" />
+                            <li key={i} className="flex items-center space-x-2 text-sm text-gray-700 dark:text-gray-300">
+                              <div className="w-1.5 h-1.5 bg-black dark:bg-white rounded-full" />
                               <span>{highlight}</span>
                             </li>
                           ))}
                         </ul>
                       </div>
                       
-                      <Button className="w-full bg-teal-600 hover:bg-teal-700">
+                      <Button className="w-full bg-black dark:bg-white hover:bg-gray-900 dark:hover:bg-gray-100 text-white dark:text-black py-6 text-base font-semibold rounded-full transition-all duration-300 shadow-sm hover:shadow-md">
                         Book Now
                       </Button>
                     </CardContent>
@@ -238,7 +251,7 @@ const StaysPage = () => {
         </section>
 
         {/* Call to Action */}
-        <section className="py-20 bg-teal-50">
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -246,16 +259,16 @@ const StaysPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 Need Help Finding the Perfect Stay?
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
                 Our accommodation specialists can help you find the perfect place to stay based on your preferences and budget
               </p>
               <Button 
                 size="lg"
-                onClick={() => window.open('https://wa.me/6281234567890', '_blank')}
-                className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 text-lg font-semibold"
+                onClick={() => window.open('https://wa.me/62895610524580', '_blank')}
+                className="bg-black dark:bg-white hover:bg-gray-900 dark:hover:bg-gray-100 text-white dark:text-black px-8 py-6 text-lg font-semibold rounded-full shadow-lg"
               >
                 Get Personalized Recommendations
               </Button>

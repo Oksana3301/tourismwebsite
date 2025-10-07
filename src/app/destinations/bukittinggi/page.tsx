@@ -107,7 +107,7 @@ const BukittinggiPage = () => {
               </h1>
               
               <p className="text-xl sm:text-2xl text-gray-700 mb-10 max-w-2xl mx-auto">
-                Discover the charm of Bukittinggi's cool climate, colonial architecture, and stunning natural landscapes
+                Discover the charm of Bukittinggi&apos;s cool climate, colonial architecture, and stunning natural landscapes
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -117,7 +117,7 @@ const BukittinggiPage = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  onClick={() => window.open('https://wa.me/6281234567890', '_blank')}
+                  onClick={() => window.open('https://wa.me/62895610524580', '_blank')}
                   className="px-8 py-4 text-lg font-semibold border-2 border-purple-600 text-purple-600 hover:bg-purple-50"
                 >
                   WhatsApp Inquiry
@@ -142,7 +142,7 @@ const BukittinggiPage = () => {
                   <Mountain className="h-8 w-8 text-purple-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Cool Climate</h3>
-                <p className="text-gray-600">Escape the tropical heat in highlands</p>
+                <p className="text-muted-foreground">Escape the tropical heat in highlands</p>
               </motion.div>
               
               <motion.div
@@ -156,7 +156,7 @@ const BukittinggiPage = () => {
                   <Building className="h-8 w-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Colonial Heritage</h3>
-                <p className="text-gray-600">Historic architecture and landmarks</p>
+                <p className="text-muted-foreground">Historic architecture and landmarks</p>
               </motion.div>
               
               <motion.div
@@ -170,7 +170,7 @@ const BukittinggiPage = () => {
                   <Star className="h-8 w-8 text-green-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Natural Beauty</h3>
-                <p className="text-gray-600">Stunning canyons and landscapes</p>
+                <p className="text-muted-foreground">Stunning canyons and landscapes</p>
               </motion.div>
             </div>
 
@@ -179,25 +179,25 @@ const BukittinggiPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Cool Mountain Air</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     Located 930 meters above sea level, Bukittinggi offers a refreshing escape from the tropical heat with its cool, pleasant climate.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Rich History</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     From Dutch colonial forts to Japanese WWII tunnels, Bukittinggi is steeped in history waiting to be explored.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Natural Wonders</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     The dramatic Ngarai Sianok canyon and surrounding landscapes offer breathtaking views and outdoor adventures.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Cultural Hub</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     Experience authentic Minangkabau culture through traditional performances, crafts, and cuisine.
                   </p>
                 </div>
@@ -219,7 +219,7 @@ const BukittinggiPage = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Top <span className="text-purple-600">Attractions</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Explore the must-see landmarks and natural wonders of Bukittinggi
               </p>
             </motion.div>
@@ -242,13 +242,13 @@ const BukittinggiPage = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                       <div className="absolute bottom-4 left-4 text-white">
-                        <h3 className="text-2xl font-bold mb-1">{attraction.name}</h3>
-                        <Badge variant="secondary">{attraction.category}</Badge>
+                        <h3 className="text-2xl font-bold mb-1 drop-shadow-2xl">{attraction.name}</h3>
+                        <Badge variant="secondary" className="drop-shadow-lg">{attraction.category}</Badge>
                       </div>
                     </div>
                     
                     <CardContent className="p-6">
-                      <p className="text-gray-600 mb-4">{attraction.description}</p>
+                      <p className="text-muted-foreground mb-4">{attraction.description}</p>
                       <Button className="w-full bg-purple-600 hover:bg-purple-700">
                         Learn More
                       </Button>
@@ -273,7 +273,7 @@ const BukittinggiPage = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Activities & <span className="text-blue-600">Experiences</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Engage with local culture and nature through our curated experiences
               </p>
             </motion.div>
@@ -299,14 +299,14 @@ const BukittinggiPage = () => {
                     </CardHeader>
                     
                     <CardContent className="space-y-4">
-                      <p className="text-gray-600 text-sm">{activity.description}</p>
+                      <p className="text-muted-foreground text-sm">{activity.description}</p>
                       
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-2 text-sm">Includes:</h4>
                         <ul className="space-y-1">
                           {activity.includes.map((item, i) => (
-                            <li key={i} className="flex items-center space-x-2 text-xs text-gray-600">
-                              <div className="w-1 h-1 bg-blue-500 rounded-full" />
+                            <li key={i} className="flex items-center space-x-2 text-xs text-muted-foreground">
+                              <div className="w-1 h-1 bg-primary rounded-full" />
                               <span>{item}</span>
                             </li>
                           ))}
@@ -337,7 +337,7 @@ const BukittinggiPage = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Choose Your <span className="text-purple-600">Package</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 All-inclusive mountain adventures tailored to your preferences
               </p>
             </motion.div>
@@ -372,7 +372,7 @@ const BukittinggiPage = () => {
                         <h4 className="font-semibold text-gray-900 mb-3">Includes:</h4>
                         <ul className="space-y-2">
                           {pkg.includes.map((item, i) => (
-                            <li key={i} className="flex items-center space-x-2 text-sm text-gray-600">
+                            <li key={i} className="flex items-center space-x-2 text-sm text-muted-foreground">
                               <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
                               <span>{item}</span>
                             </li>
@@ -384,8 +384,8 @@ const BukittinggiPage = () => {
                         <h4 className="font-semibold text-gray-900 mb-3">Highlights:</h4>
                         <ul className="space-y-2">
                           {pkg.highlights.map((highlight, i) => (
-                            <li key={i} className="flex items-center space-x-2 text-sm text-gray-600">
-                              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                            <li key={i} className="flex items-center space-x-2 text-sm text-muted-foreground">
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full" />
                               <span>{highlight}</span>
                             </li>
                           ))}

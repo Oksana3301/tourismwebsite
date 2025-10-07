@@ -18,7 +18,6 @@ interface BitcoinPaymentFormProps {
 
 const BitcoinPaymentForm = ({ amount, currency, onSuccess, onError }: BitcoinPaymentFormProps) => {
   const [selectedCrypto, setSelectedCrypto] = useState('bitcoin');
-  const [walletAddress, setWalletAddress] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
   const [paymentStatus, setPaymentStatus] = useState<'idle' | 'pending' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -40,13 +39,9 @@ const BitcoinPaymentForm = ({ amount, currency, onSuccess, onError }: BitcoinPay
     return (amount * rate).toFixed(8);
   };
 
-  const handlePaymentSubmit = () => {
-    if (!walletAddress) {
-      setErrorMessage('Please enter your wallet address');
-      onError('Please enter your wallet address');
-      return;
-    }
+  const recipientAddress = '0xb4cFcCCA925d6f33AFB8dC948e474EDfD0703f4a';
 
+  const handlePaymentSubmit = () => {
     setIsProcessing(true);
     setPaymentStatus('pending');
 
@@ -54,6 +49,7 @@ const BitcoinPaymentForm = ({ amount, currency, onSuccess, onError }: BitcoinPay
     setTimeout(() => {
       setIsProcessing(false);
       setPaymentStatus('success');
+      onSuccess();
     }, 3000);
   };
 
@@ -76,21 +72,20 @@ const BitcoinPaymentForm = ({ amount, currency, onSuccess, onError }: BitcoinPay
             </div>
           </motion.div>
           
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Payment Received!</h3>
-          <p className="text-gray-600 mb-6">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Payment Received!</h3>
+          <p className="text-gray-700 dark:text-gray-300 mb-6">
             Thank you for your payment. Your booking has been confirmed.
           </p>
           
-          <div className="bg-gray-50 p-4 rounded-lg mb-6 text-left">
-            <h4 className="font-medium text-gray-900 mb-2">Payment Details</h4>
+          <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg mb-6 text-left border border-gray-200 dark:border-gray-700">
+            <h4 className="font-medium text-gray-900 dark:text-white mb-2">Payment Details</h4>
             <div className="space-y-1 text-sm">
-              <p><span className="text-gray-600">Amount:</span> {calculateCryptoAmount()} {selectedCrypto.toUpperCase()}</p>
-              <p><span className="text-gray-600">Address:</span> {walletAddress}</p>
-              <p><span className="text-gray-600">Status:</span> <Badge className="bg-green-100 text-green-800">Confirmed</Badge></p>
+              <p><span className="text-gray-600 dark:text-gray-400">Amount:</span> <span className="text-gray-900 dark:text-white">{calculateCryptoAmount()} {selectedCrypto.toUpperCase()}</span></p>
+              <p><span className="text-gray-600 dark:text-gray-400">Status:</span> <Badge className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-400">Confirmed</Badge></p>
             </div>
           </div>
           
-          <Button onClick={onSuccess} className="w-full">
+          <Button onClick={onSuccess} className="w-full bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100">
             Continue
           </Button>
         </div>
@@ -110,19 +105,19 @@ const BitcoinPaymentForm = ({ amount, currency, onSuccess, onError }: BitcoinPay
             </div>
           </motion.div>
           
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Payment Failed</h3>
-          <p className="text-gray-600 mb-2">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Payment Failed</h3>
+          <p className="text-gray-700 dark:text-gray-300 mb-2">
             {errorMessage || 'An error occurred while processing your payment.'}
           </p>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-700 dark:text-gray-300 mb-6">
             Please try again or contact support for assistance.
           </p>
           
           <div className="flex gap-3">
-            <Button onClick={() => setPaymentStatus('idle')} className="flex-1">
+            <Button onClick={() => setPaymentStatus('idle')} className="flex-1 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100">
               Try Again
             </Button>
-            <Button variant="outline" onClick={() => onError('Contact support')} className="flex-1">
+            <Button variant="outline" onClick={() => onError('Contact support')} className="flex-1 border-gray-400 dark:border-gray-600">
               Contact Support
             </Button>
           </div>
@@ -133,35 +128,45 @@ const BitcoinPaymentForm = ({ amount, currency, onSuccess, onError }: BitcoinPay
     return (
       <div className="space-y-6">
         <div>
-          <Label>Select Cryptocurrency</Label>
-          <div className="grid grid-cols-3 gap-3 mt-2">
+          <Label className="text-gray-900 dark:text-white font-semibold mb-3 block">Select Cryptocurrency</Label>
+          <div className="grid grid-cols-3 gap-3">
             {cryptoOptions.map((crypto) => {
               const Icon = crypto.icon;
               return (
-                <Button
+                <motion.div
                   key={crypto.id}
-                  variant={selectedCrypto === crypto.id ? 'default' : 'outline'}
-                  className="flex flex-col items-center space-y-2 h-auto p-3"
+                  whileHover={{ y: -2, transition: { duration: 0.2 } }}
                   onClick={() => setSelectedCrypto(crypto.id)}
+                  className="cursor-pointer"
                 >
-                  <Icon className="h-6 w-6" />
-                  <span className="text-xs">{crypto.symbol}</span>
-                </Button>
+                  <Card className={`h-full overflow-hidden border-2 transition-all duration-300 rounded-xl ${
+                    selectedCrypto === crypto.id 
+                      ? 'border-black dark:border-white bg-gray-50 dark:bg-gray-800' 
+                      : 'border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
+                  }`}>
+                    <CardContent className="p-4">
+                      <div className="flex flex-col items-center space-y-2">
+                        <Icon className="h-6 w-6 text-gray-900 dark:text-white" />
+                        <span className="text-xs font-semibold text-gray-900 dark:text-white">{crypto.symbol}</span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               );
             })}
           </div>
         </div>
 
-        <div className="bg-gray-50 p-4 rounded-lg">
+        <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
           <div className="flex justify-between items-center mb-2">
-            <span className="text-gray-600">Amount:</span>
-            <span className="font-medium">
+            <span className="text-gray-700 dark:text-gray-300">Amount:</span>
+            <span className="font-medium text-gray-900 dark:text-white">
               {calculateCryptoAmount()} {selectedCrypto.toUpperCase()}
             </span>
           </div>
           <div className="flex justify-between items-center">
-            <span className="text-gray-600">Equivalent:</span>
-            <span className="font-medium">
+            <span className="text-gray-700 dark:text-gray-300">Equivalent:</span>
+            <span className="font-medium text-gray-900 dark:text-white">
               {currency === 'usd' ? `$${amount}` : 
                currency === 'eur' ? `€${amount}` : 
                `IDR ${amount.toLocaleString('en-US')}`}
@@ -170,49 +175,51 @@ const BitcoinPaymentForm = ({ amount, currency, onSuccess, onError }: BitcoinPay
         </div>
 
         <div>
-          <Label htmlFor="wallet-address">Your Wallet Address</Label>
-          <div className="mt-1 flex">
+          <Label htmlFor="recipient-address" className="text-gray-900 dark:text-white font-semibold mb-2 block">
+            Recipient Wallet Address
+          </Label>
+          <div className="flex gap-2">
             <Input
-              id="wallet-address"
-              value={walletAddress}
-              onChange={(e) => setWalletAddress(e.target.value)}
-              placeholder="Enter your wallet address"
-              className="rounded-r-none"
+              id="recipient-address"
+              value={recipientAddress}
+              readOnly
+              className="font-mono text-sm bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-xl"
             />
             <Button
               variant="outline"
-              onClick={() => handleCopyAddress(walletAddress)}
-              className="rounded-l-none border-l-0"
+              onClick={() => handleCopyAddress(recipientAddress)}
+              className="border-2 border-gray-200 dark:border-gray-700 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               <QrCode className="h-4 w-4" />
             </Button>
           </div>
-          <p className="text-xs text-gray-500 mt-1">
-            We'll send the payment instructions to this address
+          <p className="text-xs text-gray-700 dark:text-gray-300 mt-2">
+            Send payment to this address
           </p>
         </div>
 
-        <div className="bg-blue-50 p-4 rounded-lg">
-          <h4 className="font-medium text-blue-900 mb-2">Payment Instructions</h4>
-          <ol className="text-sm text-blue-800 space-y-1 list-decimal list-inside">
-            <li>Send {calculateCryptoAmount()} {selectedCrypto.toUpperCase()} to the provided address</li>
+        <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg border border-blue-200 dark:border-blue-900">
+          <h4 className="font-medium text-blue-900 dark:text-blue-300 mb-2">Payment Instructions</h4>
+          <ol className="text-sm text-blue-800 dark:text-blue-400 space-y-1 list-decimal list-inside">
+            <li>Send exactly {calculateCryptoAmount()} {selectedCrypto.toUpperCase()} to the address above</li>
             <li>Wait for blockchain confirmation (usually 3-6 confirmations)</li>
             <li>Once confirmed, your booking will be automatically processed</li>
+            <li>Save your transaction hash for reference</li>
           </ol>
         </div>
 
         <Button
           onClick={handlePaymentSubmit}
-          disabled={isProcessing || !walletAddress}
-          className="w-full bg-blue-600 hover:bg-blue-700"
+          disabled={isProcessing}
+          className="w-full bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100"
         >
           {isProcessing ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Processing...
+              Confirming Payment...
             </>
           ) : (
-            'Send Payment'
+            'I Have Sent the Payment'
           )}
         </Button>
       </div>
@@ -220,20 +227,20 @@ const BitcoinPaymentForm = ({ amount, currency, onSuccess, onError }: BitcoinPay
   };
 
   return (
-    <Card className="w-full max-w-md mx-auto">
-      <CardHeader>
-        <CardTitle className="flex items-center space-x-2">
-          <Bitcoin className="h-5 w-5 text-orange-500" />
+    <Card className="w-full max-w-md mx-auto bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 rounded-2xl shadow-sm hover:shadow-lg">
+      <CardHeader className="p-8 pb-4">
+        <CardTitle className="flex items-center space-x-2 text-2xl font-bold text-black dark:text-white" style={{ fontWeight: 800 }}>
+          <Bitcoin className="h-6 w-6 text-orange-500" />
           <span>Cryptocurrency Payment</span>
         </CardTitle>
-        <CardDescription>
+        <CardDescription className="text-gray-700 dark:text-gray-300 text-base">
           Pay with {selectedCrypto === 'bitcoin' ? 'Bitcoin' : 
                    selectedCrypto === 'ethereum' ? 'Ethereum' : 
                    'Tether (USDT)'}
         </CardDescription>
       </CardHeader>
       
-      <CardContent>
+      <CardContent className="px-8 pb-8">
         {renderPaymentStatus()}
       </CardContent>
     </Card>

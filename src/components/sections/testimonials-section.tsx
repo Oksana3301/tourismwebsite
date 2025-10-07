@@ -9,7 +9,7 @@ const testimonials = [
   {
     name: 'Sarah Johnson',
     location: 'California, USA',
-    avatar: 'https://ui-avatars.com/api/?name=Sarah+Johnson&background=000000&color=ffffff&size=128&bold=true',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces',
     rating: 5,
     quote: 'The best surf trip of my life! The waves in Mentawai were absolutely incredible, and the guides knew every single secret spot. Professional photography captured memories I will treasure forever.',
     trip: 'Mentawai Surf Paradise',
@@ -18,16 +18,16 @@ const testimonials = [
   {
     name: 'David Chen',
     location: 'Singapore',
-    avatar: 'https://ui-avatars.com/api/?name=David+Chen&background=000000&color=ffffff&size=128&bold=true',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces',
     rating: 5,
-    quote: 'Wisata Padang exceeded all expectations. The cultural immersion was authentic, the food was phenomenal, and our guide made us feel like family. Booking was seamless and support was instant.',
+    quote: 'SumatraWay exceeded all expectations. The cultural immersion was authentic, the food was phenomenal, and our guide made us feel like family. Booking was seamless and support was instant.',
     trip: 'Padang Cultural Journey',
     date: 'August 2024'
   },
   {
     name: 'Emma Williams',
     location: 'London, UK',
-    avatar: 'https://ui-avatars.com/api/?name=Emma+Williams&background=000000&color=ffffff&size=128&bold=true',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=faces',
     rating: 5,
     quote: 'Absolutely stunning! The highland trek through Bukittinggi was breathtaking. Perfect organization, incredible views, and the local village experience was something I will never forget.',
     trip: 'Bukittinggi Highland Adventure',
@@ -36,7 +36,7 @@ const testimonials = [
   {
     name: 'Michael Rodriguez',
     location: 'Barcelona, Spain',
-    avatar: 'https://ui-avatars.com/api/?name=Michael+Rodriguez&background=000000&color=ffffff&size=128&bold=true',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
     rating: 5,
     quote: 'Top-notch service from start to finish. The mobile app made everything easy, real-time tracking gave us peace of mind, and the included travel insurance was comprehensive. Highly recommended!',
     trip: 'Mentawai Surf Paradise',
@@ -45,7 +45,7 @@ const testimonials = [
   {
     name: 'Sophie Martin',
     location: 'Paris, France',
-    avatar: 'https://ui-avatars.com/api/?name=Sophie+Martin&background=000000&color=ffffff&size=128&bold=true',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
     rating: 5,
     quote: 'What an adventure! The cooking class in Padang was a highlight - now I can make authentic Rendang at home. Every detail was thoughtfully planned. Worth every penny!',
     trip: 'Padang Cultural Journey',
@@ -54,7 +54,7 @@ const testimonials = [
   {
     name: 'James Anderson',
     location: 'Melbourne, Australia',
-    avatar: 'https://ui-avatars.com/api/?name=James+Anderson&background=000000&color=ffffff&size=128&bold=true',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
     rating: 5,
     quote: 'Perfect for adventure seekers! The blend of trekking, culture, and nature in Bukittinggi was phenomenal. Guides were knowledgeable and accommodations were comfortable. Best trip ever!',
     trip: 'Bukittinggi Highland Adventure',
@@ -81,7 +81,7 @@ const TestimonialsSection = () => {
             What Our Travelers Say
           </h2>
           <p 
-            className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
             style={{ letterSpacing: '-0.02em' }}
           >
             Real experiences from adventurers who discovered the magic of West Sumatra with us
@@ -128,16 +128,20 @@ const TestimonialsSection = () => {
                   </div>
 
                   {/* Author */}
-                  <div className="flex items-center gap-3">
-                    <Avatar className="h-12 w-12 border-2 border-gray-200 dark:border-gray-800">
-                      <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                      <AvatarFallback className="bg-black dark:bg-white text-white dark:text-black font-semibold">
+                  <div className="flex items-center gap-4">
+                    <Avatar className="h-14 w-14 border-2 border-gray-200 dark:border-gray-700 ring-2 ring-offset-2 ring-gray-100 dark:ring-gray-800 dark:ring-offset-gray-900">
+                      <AvatarImage 
+                        src={testimonial.avatar} 
+                        alt={testimonial.name}
+                        className="object-cover"
+                      />
+                      <AvatarFallback className="bg-gradient-to-br from-blue-500 to-teal-500 text-white font-semibold text-lg">
                         {testimonial.name.split(' ').map(n => n[0]).join('')}
                       </AvatarFallback>
                     </Avatar>
                     <div>
-                      <p className="font-semibold text-black dark:text-white text-sm">{testimonial.name}</p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">{testimonial.location}</p>
+                      <p className="font-bold text-black dark:text-white text-base">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -166,7 +170,7 @@ const TestimonialsSection = () => {
                 <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
               ))}
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Average Rating</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">Average Rating</p>
           </div>
           
           <div className="text-center">
@@ -176,7 +180,7 @@ const TestimonialsSection = () => {
             >
               10K+
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Happy Travelers</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">Happy Travelers</p>
           </div>
           
           <div className="text-center">
@@ -186,7 +190,7 @@ const TestimonialsSection = () => {
             >
               98%
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Satisfaction Rate</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">Satisfaction Rate</p>
           </div>
           
           <div className="text-center">
@@ -196,7 +200,7 @@ const TestimonialsSection = () => {
             >
               15+
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Years Experience</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">Years Experience</p>
           </div>
         </motion.div>
       </div>

@@ -2,7 +2,9 @@
 import PageWrapper from '@/components/layout/page-wrapper';
 import { motion } from 'framer-motion';
 import { Shield, Lock, Eye, Database } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 const PrivacyPage = () => {
   const sections = [
@@ -33,7 +35,7 @@ const PrivacyPage = () => {
       content: [
         'We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this privacy policy.',
         'We may share your information with trusted third-party service providers who assist us in operating our website and conducting our business, such as payment processors, travel suppliers, and customer support providers.',
-        'We may disclose your information if required by law or in good faith belief that such action is necessary to comply with legal processes, protect and defend the rights or property of Wisata Padang, or protect the personal safety of users of the public.',
+        'We may disclose your information if required by law or in good faith belief that such action is necessary to comply with legal processes, protect and defend the rights or property of PT. Kurnia Cahaya Ilahi, or protect the personal safety of users of the public.',
       ],
     },
     {
@@ -53,7 +55,7 @@ const PrivacyPage = () => {
         'You have the right to object to or restrict certain processing of your personal information.',
         'You have the right to request the deletion of your personal information in certain circumstances.',
         'You have the right to withdraw your consent for marketing communications at any time.',
-        'To exercise these rights, please contact us at privacy@wisatapadang.com.',
+        'To exercise these rights, please contact us at privacy@sumateraway.com.',
       ],
     },
     {
@@ -63,21 +65,6 @@ const PrivacyPage = () => {
         'We use cookies to enhance your experience on our website, analyze site traffic, and for marketing purposes.',
         'A cookie is a small file that is placed on your computer\'s hard drive by a web page server. Cookies do not collect personal information.',
         'You can choose to disable cookies through your browser settings, but this may affect your ability to use certain features of our website.',
-      ],
-    },
-    {
-      title: 'Third-Party Links',
-      icon: <Lock className="h-6 w-6" />,
-      content: [
-        'Our website may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third party\'s site.',
-        'We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.',
-      ],
-    },
-    {
-      title: 'Children\'s Privacy',
-      icon: <Shield className="h-6 w-6" />,
-      content: [
-        'Our website is not intended for use by children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.',
       ],
     },
     {
@@ -93,9 +80,10 @@ const PrivacyPage = () => {
       icon: <Shield className="h-6 w-6" />,
       content: [
         'If you have any questions about this Privacy Policy, please contact us:',
-        'Email: privacy@wisatapadang.com',
+        'Company: PT. Kurnia Cahaya Ilahi (SumateraWay)',
+        'Email: privacy@sumateraway.com',
         'Address: Jl. Sudirman No. 123, Padang, West Sumatra, Indonesia',
-        'Phone: +62 812-3456-7890',
+        'Phone: +62 895-6105-24580',
       ],
     },
   ];
@@ -105,8 +93,14 @@ const PrivacyPage = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-pink-900/20"></div>
-          <div className="absolute inset-0 bg-[url('/images/hero/padang-hero.svg')] bg-cover bg-center bg-no-repeat opacity-30"></div>
+          <img
+            src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=2000&h=1200&fit=crop"
+            alt="Privacy Hero"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-transparent dark:from-black/20"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -116,111 +110,147 @@ const PrivacyPage = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto"
           >
-            <div className="flex justify-center mb-6">
-              <div className="p-3 bg-purple-100 rounded-full">
-                <Shield className="h-8 w-8 text-purple-600" />
-              </div>
-            </div>
+            <Badge className="mb-6 bg-white/90 dark:bg-black/90 text-black dark:text-white backdrop-blur-sm">
+              <Shield className="mr-2 h-4 w-4" />
+              Your Privacy Matters
+            </Badge>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
-              Privacy <span className="text-purple-600">Policy</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg">
+              Privacy <span className="text-blue-400">Policy</span>
             </h1>
             
-            <p className="text-xl sm:text-2xl text-gray-700 mb-10 max-w-2xl mx-auto">
+            <p className="text-xl sm:text-2xl text-white/90 mb-10 max-w-2xl mx-auto drop-shadow-md">
               How we collect, use, and protect your personal information
             </p>
+
+            <div className="inline-block">
+              <p className="text-white/80 text-sm">Last Updated: January 15, 2025</p>
+            </div>
           </motion.div>
         </div>
       </section>
 
       {/* Privacy Content */}
-      <section className="py-20">
+      <section className="py-32 bg-gradient-to-b from-white via-gray-50/30 to-white dark:from-black dark:via-gray-900/30 dark:to-black transition-colors duration-300">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="mb-12"
           >
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Last Updated: October 1, 2023</CardTitle>
-                <CardDescription>
-                  This Privacy Policy describes how Wisata Padang collects, uses, and protects your personal information when you use our website and services.
-                </CardDescription>
-              </CardHeader>
-              
-              <CardContent className="space-y-8">
-                {sections.map((section, index) => (
-                  <div key={index} className="border-l-4 border-purple-500 pl-4">
-                    <div className="flex items-center mb-3">
-                      <div className="text-purple-600 mr-3">
-                        {section.icon}
-                      </div>
-                      <h2 className="text-xl font-bold text-gray-900">{section.title}</h2>
-                    </div>
-                    <ul className="space-y-2">
-                      {section.content.map((paragraph, pIndex) => (
-                        <li key={pIndex} className="text-gray-700">
-                          {paragraph}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+            <Card className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg">
+              <CardContent className="p-8">
+                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                  This Privacy Policy describes how <span className="font-bold text-black dark:text-white">PT. Kurnia Cahaya Ilahi</span> (operating as SumateraWay) collects, uses, and protects your personal information when you use our website and services.
+                </p>
               </CardContent>
             </Card>
           </motion.div>
+
+          <div className="space-y-8">
+            {sections.map((section, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.05 }}
+              >
+                <Card className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-8">
+                    <div className="flex items-center mb-4">
+                      <div className="p-3 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 mr-4">
+                        {section.icon}
+                      </div>
+                      <h2 className="text-2xl font-bold text-black dark:text-white">{section.title}</h2>
+                    </div>
+                    <ul className="space-y-3">
+                      {section.content.map((paragraph, pIndex) => (
+                        <li key={pIndex} className="flex items-start text-gray-700 dark:text-gray-300 leading-relaxed">
+                          <div className="w-1.5 h-1.5 bg-black dark:bg-white rounded-full mt-2.5 mr-3 shrink-0" />
+                          <span>{paragraph}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Additional Information */}
-      <section className="py-20 bg-purple-50">
+      {/* Contact Section */}
+      <section className="py-32 bg-white dark:bg-black transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center"
+            className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Concerns about your privacy?</h2>
-            <p className="text-xl text-gray-700 mb-10 max-w-2xl mx-auto">
-              If you have any questions or concerns about how we handle your personal information, please don't hesitate to contact us.
+            <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-4">
+              Concerns About Your <span className="text-blue-600 dark:text-blue-400">Privacy?</span>
+            </h2>
+            <p className="text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+              If you have any questions or concerns about how we handle your personal information
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-              <Card className="text-center">
-                <CardContent className="pt-6">
-                  <div className="flex justify-center mb-4">
-                    <div className="p-3 bg-green-100 rounded-full">
-                      <Shield className="h-8 w-8 text-green-600" />
-                    </div>
-                  </div>
-                  <h3 className="font-semibold text-lg mb-2">Data Protection Officer</h3>
-                  <p className="text-gray-600 mb-4">For specific privacy concerns</p>
-                  <a href="mailto:dpo@wisatapadang.com" className="text-purple-600 hover:text-purple-800 font-medium">
-                    dpo@wisatapadang.com
-                  </a>
-                </CardContent>
-              </Card>
-              
-              <Card className="text-center">
-                <CardContent className="pt-6">
-                  <div className="flex justify-center mb-4">
-                    <div className="p-3 bg-blue-100 rounded-full">
-                      <Lock className="h-8 w-8 text-blue-600" />
-                    </div>
-                  </div>
-                  <h3 className="font-semibold text-lg mb-2">Terms of Service</h3>
-                  <p className="text-gray-600 mb-4">Learn about our terms and conditions</p>
-                  <a href="/terms" className="text-purple-600 hover:text-purple-800 font-medium">
-                    View Terms of Service
-                  </a>
-                </CardContent>
-              </Card>
-            </div>
           </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <Card className="text-center bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardContent className="pt-8 pb-8">
+                  <div className="flex justify-center mb-4">
+                    <div className="p-4 bg-green-100 dark:bg-green-900/30 rounded-full">
+                      <Shield className="h-8 w-8 text-green-600 dark:text-green-400" />
+                    </div>
+                  </div>
+                  <h3 className="font-bold text-xl mb-2 text-black dark:text-white">Data Protection Officer</h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">For specific privacy concerns</p>
+                  <a 
+                    href="mailto:dpo@sumateraway.com" 
+                    className="inline-block px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-semibold hover:bg-gray-900 dark:hover:bg-gray-100 transition-all duration-300"
+                  >
+                    Contact DPO
+                  </a>
+                </CardContent>
+              </Card>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <Card className="text-center bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardContent className="pt-8 pb-8">
+                  <div className="flex justify-center mb-4">
+                    <div className="p-4 bg-blue-100 dark:bg-blue-900/30 rounded-full">
+                      <Lock className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                    </div>
+                  </div>
+                  <h3 className="font-bold text-xl mb-2 text-black dark:text-white">Terms of Service</h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">Learn about our terms</p>
+                  <Button
+                    onClick={() => window.location.href = '/terms'}
+                    className="bg-black dark:bg-white text-white dark:text-black rounded-full font-semibold hover:bg-gray-900 dark:hover:bg-gray-100 transition-all duration-300"
+                  >
+                    View Terms
+                  </Button>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
         </div>
       </section>
     </PageWrapper>

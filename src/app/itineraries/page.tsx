@@ -3,7 +3,7 @@ import PageWrapper from '@/components/layout/page-wrapper';
 import { motion } from 'framer-motion';
 import { MapPin, Clock, Users, DollarSign, Star, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ItinerariesSEOOptimization } from '@/components/seo/seo';
 
@@ -164,7 +164,7 @@ const ItinerariesPage = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  onClick={() => window.open('https://wa.me/6281234567890', '_blank')}
+                  onClick={() => window.open('https://wa.me/62895610524580', '_blank')}
                   className="px-8 py-4 text-lg font-semibold border-2 border-amber-600 text-amber-600 hover:bg-amber-50"
                 >
                   WhatsApp Inquiry
@@ -228,8 +228,8 @@ const ItinerariesPage = () => {
                         <span className="text-sm font-medium">{itinerary.duration}</span>
                       </div>
                       <div className="absolute bottom-4 left-4 text-white">
-                        <h3 className="text-xl font-bold mb-1">{itinerary.title}</h3>
-                        <p className="text-sm opacity-90">{itinerary.description}</p>
+                        <h3 className="text-xl font-bold mb-1 drop-shadow-2xl">{itinerary.title}</h3>
+                        <p className="text-sm opacity-90 drop-shadow-lg">{itinerary.description}</p>
                       </div>
                     </div>
                     
@@ -320,7 +320,7 @@ const ItinerariesPage = () => {
               </p>
               <Button 
                 size="lg"
-                onClick={() => window.open('https://wa.me/6281234567890', '_blank')}
+                onClick={() => window.open('https://wa.me/62895610524580', '_blank')}
                 className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg font-semibold"
               >
                 Request Custom Itinerary

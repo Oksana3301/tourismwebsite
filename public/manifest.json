@@ -1,7 +1,7 @@
 {
-  "name": "Wisata Padang",
-  "short_name": "WisataPadang",
-  "description": "Experience the beauty of West Sumatra with our adventure tours, surf trips, cultural experiences, and eco-friendly accommodations.",
+  "name": "SumateraWay",
+  "short_name": "SumateraWay",
+  "description": "Plan, book, and glide across West Sumatra. Experience adventure tours, surf trips, cultural experiences, and eco-friendly accommodations.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -53,8 +53,8 @@
   "related_applications": [
     {
       "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.wisatapadang.app",
-      "id": "com.wisatapadang.app"
+      "url": "https://play.google.com/store/apps/details?id=com.sumateraway.app",
+      "id": "com.sumateraway.app"
     }
   ]
 }

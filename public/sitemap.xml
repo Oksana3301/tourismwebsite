@@ -1,87 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
   <!-- Homepage -->
   <url>
-    <loc>https://wisatapadang.com/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <loc>https://sumateraway.com/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
+  <!-- Main Pages -->
+  <url>
+    <loc>https://sumateraway.com/experiences</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://sumateraway.com/stays</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://sumateraway.com/trip-planner</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://sumateraway.com/destinations</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Destination Pages -->
   <url>
-    <loc>https://wisatapadang.com/destinations/mentawai</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <loc>https://sumateraway.com/destinations/mentawai</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://wisatapadang.com/destinations/padang</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <loc>https://sumateraway.com/destinations/padang</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://wisatapadang.com/destinations/bukittinggi</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <loc>https://sumateraway.com/destinations/bukittinggi</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Experience Pages -->
+  <!-- Other Pages -->
   <url>
-    <loc>https://wisatapadang.com/experiences</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://sumateraway.com/itineraries</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
-  <!-- Stay Pages -->
   <url>
-    <loc>https://wisatapadang.com/stays</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Itinerary Pages -->
-  <url>
-    <loc>https://wisatapadang.com/itineraries</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Payment Page -->
-  <url>
-    <loc>https://wisatapadang.com/payment</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <loc>https://sumateraway.com/about</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
-  <!-- FAQ Page -->
   <url>
-    <loc>https://wisatapadang.com/faq</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://sumateraway.com/contact</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   
-  <!-- Legal Pages -->
   <url>
-    <loc>https://wisatapadang.com/terms</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <loc>https://sumateraway.com/faq</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sumateraway.com/privacy</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://wisatapadang.com/privacy</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <loc>https://sumateraway.com/terms</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  
 </urlset>

@@ -3,32 +3,31 @@ import '@fontsource-variable/inter';
 import './globals.css';
 import './performance.css';
 import { Providers } from '@/components/providers/providers';
-import LenisProvider from '@/components/providers/lenis-provider';
 import WhatsAppFloatButton from '@/components/layout/whatsapp-float-button';
 import { HomeSEO } from '@/components/seo/seo';
 
 export const metadata: Metadata = {
-  title: 'Wisata Padang - West Sumatra Adventure Tours',
-  description: 'Experience the beauty of West Sumatra with our adventure tours, surf trips, cultural experiences, and eco-friendly accommodations. Book your Mentawai Islands adventure today!',
-  keywords: 'West Sumatra, Mentawai Islands, surf trips, adventure tours, cultural experiences, eco-tourism, Indonesia travel',
-  authors: [{ name: 'Wisata Padang' }],
-  creator: 'Wisata Padang',
-  publisher: 'Wisata Padang',
+  title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
+  description: 'Plan, book, and glide across West Sumatra. Experience adventure tours, surf trips, cultural experiences, and eco-friendly accommodations. Book your Mentawai Islands adventure today!',
+  keywords: 'West Sumatra, Mentawai Islands, surf trips, adventure tours, cultural experiences, eco-tourism, Indonesia travel, trip planner',
+  authors: [{ name: 'SumateraWay' }],
+  creator: 'SumateraWay',
+  publisher: 'SumateraWay',
   robots: 'index, follow',
   openGraph: {
     type: 'website',
     locale: 'en_ID',
-    url: 'https://wisatapadang.com',
-    title: 'Wisata Padang - West Sumatra Adventure Tours',
-    description: 'Experience the beauty of West Sumatra with our adventure tours, surf trips, cultural experiences, and eco-friendly accommodations.',
-    siteName: 'Wisata Padang',
+    url: 'https://sumateraway.com',
+    title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
+    description: 'Plan, book, and glide across West Sumatra. Experience adventure tours, surf trips, and cultural experiences.',
+    siteName: 'SumateraWay',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Wisata Padang - West Sumatra Adventure Tours',
-    description: 'Experience the beauty of West Sumatra with our adventure tours, surf trips, cultural experiences, and eco-friendly accommodations.',
-    creator: '@wisatapadang',
-    images: ['https://wisatapadang.com/og-image.jpg'],
+    title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
+    description: 'Plan, book, and glide across West Sumatra. Experience adventure tours, surf trips, and cultural experiences.',
+    creator: '@sumateraway',
+    images: ['https://sumateraway.com/og-image.jpg'],
   },
   icons: {
     icon: '/favicon.ico',
@@ -53,7 +52,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#7c3aed" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Wisata Padang" />
+        <meta name="apple-mobile-web-app-title" content="SumatraWay" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         
@@ -72,8 +71,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://api.stripe.com" />
         
         {/* Accessibility meta tags */}
-        <meta name="application-name" content="Wisata Padang" />
-        <meta name="apple-mobile-web-app-title" content="Wisata Padang" />
+          <meta name="application-name" content="SumateraWay" />
+          <meta name="apple-mobile-web-app-title" content="SumateraWay" />
         <meta name="msapplication-TileColor" content="#7c3aed" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
         
@@ -82,13 +81,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "TravelAgency",
-              "name": "Wisata Padang",
-              "url": "https://wisatapadang.com",
-              "logo": "https://wisatapadang.com/logo.png",
-              "image": "https://wisatapadang.com/og-image.jpg",
-              "description": "Experience the beauty of West Sumatra with our adventure tours, surf trips, cultural experiences, and eco-friendly accommodations.",
+                 "@context": "https://schema.org",
+                 "@type": "TravelAgency",
+                 "name": "SumateraWay",
+                 "url": "https://sumateraway.com",
+                 "logo": "https://sumateraway.com/logo.png",
+                 "image": "https://sumateraway.com/og-image.jpg",
+              "description": "Plan, book, and glide across West Sumatra. Experience adventure tours, surf trips, cultural experiences, and eco-friendly accommodations.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Jl. Sudirman No. 123",
@@ -99,26 +98,24 @@ export default function RootLayout({
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+62-812-3456-7890",
+                "telephone": "+62-895-6105-24580",
                 "contactType": "customer service",
-                "email": "info@wisatapadang.com",
+                   "email": "info@sumateraway.com",
                 "availableLanguage": ["Indonesian", "English"]
               },
-              "sameAs": [
-                "https://www.facebook.com/wisatapadang",
-                "https://www.instagram.com/wisatapadang",
-                "https://twitter.com/wisatapadang"
-              ]
+                   "sameAs": [
+                     "https://www.facebook.com/sumateraway",
+                     "https://www.instagram.com/sumateraway",
+                     "https://twitter.com/sumateraway"
+                   ]
             })
           }}
         />
       </head>
       <body className="font-inter">
         <Providers>
-          <LenisProvider>
-            {children}
-            <WhatsAppFloatButton />
-          </LenisProvider>
+          {children}
+          <WhatsAppFloatButton />
         </Providers>
       </body>
     </html>

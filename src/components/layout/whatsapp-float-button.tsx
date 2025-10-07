@@ -100,7 +100,7 @@ const WhatsAppFloatButton = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
                     <Phone className="h-4 w-4" />
-                    <span>+{process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '62 812-3456-7890'}</span>
+                    <span>+{process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '62 895-6105-24580'}</span>
                   </div>
                   <WhatsAppContact variant="icon" />
                 </div>

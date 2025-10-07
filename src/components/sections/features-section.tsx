@@ -82,7 +82,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-32 bg-white dark:bg-black transition-colors duration-300">
+    <section id="features" className="py-32 bg-background transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header - Apple Style */}
         <motion.div
@@ -93,7 +93,7 @@ const FeaturesSection = () => {
           className="text-center mb-24"
         >
           <h2 
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-black dark:text-white mb-6 tracking-tight leading-tight"
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-foreground mb-6 tracking-tight leading-tight"
             style={{ fontWeight: 900, letterSpacing: '-0.05em' }}
           >
             Everything you've ever wanted
@@ -101,10 +101,10 @@ const FeaturesSection = () => {
             to know about your trip—and more.
           </h2>
           <p 
-            className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
             style={{ letterSpacing: '-0.02em' }}
           >
-            Wisata Padang keeps you informed by tracking more information about your journey than any other service.
+            SumatraWay keeps you informed by tracking more information about your journey than any other service.
           </p>
         </motion.div>
 
@@ -134,7 +134,7 @@ const FeaturesSection = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="p-0">
-                  <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>

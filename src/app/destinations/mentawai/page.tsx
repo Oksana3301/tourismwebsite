@@ -96,7 +96,7 @@ const MentawaiPage = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  onClick={() => window.open('https://wa.me/6281234567890', '_blank')}
+                  onClick={() => window.open('https://wa.me/62895610524580', '_blank')}
                   className="px-8 py-4 text-lg font-semibold border-2 border-blue-600 text-blue-600 hover:bg-blue-50"
                 >
                   WhatsApp Inquiry
@@ -121,7 +121,7 @@ const MentawaiPage = () => {
                   <Star className="h-8 w-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">5-Star Experience</h3>
-                <p className="text-gray-600">Rated by hundreds of satisfied surfers</p>
+                <p className="text-muted-foreground">Rated by hundreds of satisfied surfers</p>
               </motion.div>
               
               <motion.div
@@ -135,7 +135,7 @@ const MentawaiPage = () => {
                   <MapPin className="h-8 w-8 text-green-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">15+ Surf Spots</h3>
-                <p className="text-gray-600">Access to world-class breaks</p>
+                <p className="text-muted-foreground">Access to world-class breaks</p>
               </motion.div>
               
               <motion.div
@@ -149,7 +149,7 @@ const MentawaiPage = () => {
                   <Calendar className="h-8 w-8 text-purple-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Year-Round Surf</h3>
-                <p className="text-gray-600">Consistent swells all year</p>
+                <p className="text-muted-foreground">Consistent swells all year</p>
               </motion.div>
             </div>
 
@@ -158,26 +158,26 @@ const MentawaiPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Legendary Waves</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     Mentawai is home to some of the best waves on the planet. From perfect barrels to long, peeling walls, 
                     there's something for every level of surfer.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Professional Guides</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     Our local surf guides know every break intimately. They'll help you find the best waves and ensure your safety.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">All-Inclusive Packages</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     We take care of everything - accommodation, meals, transfers, and equipment. All you need to do is surf.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Sustainable Tourism</h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     We're committed to preserving Mentawai's natural beauty. Our tours support local communities and minimize environmental impact.
                   </p>
                 </div>
@@ -199,7 +199,7 @@ const MentawaiPage = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Top <span className="text-blue-600">Surf Spots</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Discover the legendary breaks that make Mentawai a surfer's paradise
               </p>
             </motion.div>
@@ -222,16 +222,16 @@ const MentawaiPage = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                       <div className="absolute bottom-4 left-4 text-white">
-                        <h3 className="text-2xl font-bold mb-1">{spot.name}</h3>
-                        <div className="flex items-center space-x-2">
-                          <Badge variant="secondary">{spot.difficulty}</Badge>
+                        <h3 className="text-2xl font-bold mb-1 drop-shadow-2xl">{spot.name}</h3>
+                        <div className="flex items-center space-x-2 drop-shadow-lg">
+                          <Badge variant="secondary" className="drop-shadow-lg">{spot.difficulty}</Badge>
                           <span className="text-sm">{spot.bestTime}</span>
                         </div>
                       </div>
                     </div>
                     
                     <CardContent className="p-6">
-                      <p className="text-gray-600 mb-4">{spot.description}</p>
+                      <p className="text-muted-foreground mb-4">{spot.description}</p>
                       <Button className="w-full bg-blue-600 hover:bg-blue-700">
                         Learn More
                       </Button>
@@ -256,7 +256,7 @@ const MentawaiPage = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Choose Your <span className="text-blue-600">Package</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 All-inclusive surf adventures tailored to your needs
               </p>
             </motion.div>
@@ -291,8 +291,8 @@ const MentawaiPage = () => {
                         <h4 className="font-semibold text-gray-900 mb-3">Includes:</h4>
                         <ul className="space-y-2">
                           {pkg.includes.map((item, i) => (
-                            <li key={i} className="flex items-center space-x-2 text-sm text-gray-600">
-                              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                            <li key={i} className="flex items-center space-x-2 text-sm text-muted-foreground">
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full" />
                               <span>{item}</span>
                             </li>
                           ))}
@@ -303,7 +303,7 @@ const MentawaiPage = () => {
                         <h4 className="font-semibold text-gray-900 mb-3">Highlights:</h4>
                         <ul className="space-y-2">
                           {pkg.highlights.map((highlight, i) => (
-                            <li key={i} className="flex items-center space-x-2 text-sm text-gray-600">
+                            <li key={i} className="flex items-center space-x-2 text-sm text-muted-foreground">
                               <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
                               <span>{highlight}</span>
                             </li>

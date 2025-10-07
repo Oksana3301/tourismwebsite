@@ -316,7 +316,7 @@ const BookingForm = ({ destination, price, title, onClose }: BookingFormProps) =
           
           <div className="flex flex-col gap-3">
             <Button 
-              onClick={() => window.open('https://wa.me/6281234567890', '_blank')}
+              onClick={() => window.open('https://wa.me/62895610524580', '_blank')}
               className="bg-green-600 hover:bg-green-700"
             >
               Chat on WhatsApp

@@ -37,8 +37,19 @@ const BookingSection = () => {
   ];
 
   return (
-    <section id="booking" className="py-32 bg-gradient-to-b from-white via-gray-50/30 to-white dark:from-black dark:via-gray-900/30 dark:to-black transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    <section id="booking" className="relative py-32 bg-gradient-to-b from-background via-secondary/30 to-background transition-colors duration-300 overflow-hidden">
+      {/* Decorative Background Image */}
+      <div className="absolute inset-0 pointer-events-none opacity-3 dark:opacity-2">
+        <img
+          src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1400&auto=format&fit=crop"
+          alt="Decoration"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/98 via-background/95 to-background/98" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header - Apple Style */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -48,13 +59,13 @@ const BookingSection = () => {
           className="text-center mb-24"
         >
           <h2 
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-black dark:text-white mb-6 tracking-tight leading-tight"
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-foreground mb-6 tracking-tight leading-tight"
             style={{ fontWeight: 900, letterSpacing: '-0.05em' }}
           >
             Book Your Adventure
           </h2>
           <p 
-            className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
             style={{ letterSpacing: '-0.02em' }}
           >
             Start your journey in seconds. Simple, secure, and hassle-free booking.
@@ -144,7 +155,7 @@ const BookingSection = () => {
                       <Label htmlFor="name" className="text-sm font-semibold text-black dark:text-white">
                         Full Name
                       </Label>
-                      <div className="relative">
+                      <div className="relative" suppressHydrationWarning>
                         <User className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
                         <Input
                           id="name"
@@ -162,7 +173,7 @@ const BookingSection = () => {
                       <Label htmlFor="email" className="text-sm font-semibold text-black dark:text-white">
                         Email Address
                       </Label>
-                      <div className="relative">
+                      <div className="relative" suppressHydrationWarning>
                         <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
                         <Input
                           id="email"
@@ -180,7 +191,7 @@ const BookingSection = () => {
                       <Label htmlFor="phone" className="text-sm font-semibold text-black dark:text-white">
                         Phone Number
                       </Label>
-                      <div className="relative">
+                      <div className="relative" suppressHydrationWarning>
                         <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
                         <Input
                           id="phone"
@@ -229,7 +240,7 @@ const BookingSection = () => {
                     <div className="p-2 rounded-full bg-black dark:bg-white mt-0.5">
                       <feature.icon className="h-4 w-4 text-white dark:text-black" />
                     </div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {feature.text}
                     </p>
                   </div>
@@ -238,16 +249,15 @@ const BookingSection = () => {
             </Card>
 
             {/* Need Help */}
-            <Card className="bg-black dark:bg-white text-white dark:text-black border-0 p-8 rounded-2xl">
+            <Card className="bg-black border-0 p-8 rounded-2xl">
               <CardContent className="p-0">
-                <h3 className="text-xl font-bold mb-3">Need Help?</h3>
-                <p className="text-sm text-gray-300 dark:text-gray-700 mb-6 leading-relaxed">
+                <h3 className="text-xl font-bold mb-3 text-white">Need Help?</h3>
+                <p className="text-sm text-gray-300 mb-6 leading-relaxed">
                   Our team is available 24/7 to assist you with any questions.
                 </p>
                 <Button
-                  variant="outline"
-                  className="w-full border-2 border-white dark:border-black text-white dark:text-black hover:bg-white/10 dark:hover:bg-black/10 h-12 rounded-full font-semibold"
-                  onClick={() => window.open('https://wa.me/6281234567890', '_blank')}
+                  className="w-full bg-white text-black hover:bg-black hover:text-white border-2 border-white h-12 rounded-full font-semibold transition-all duration-300"
+                  onClick={() => window.open('https://wa.me/62895610524580', '_blank')}
                 >
                   Contact Support
                 </Button>

@@ -31,11 +31,23 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-black">
-      {/* Very Subtle Background - Flighty Style (no animation for performance) */}
-      <div className="absolute inset-0 overflow-hidden opacity-30 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-blue-50 to-transparent rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-purple-50 to-transparent rounded-full blur-3xl" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=2000&auto=format&fit=crop"
+          alt="Bali Beach Sunset"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5" />
+      </div>
+      
+      {/* Subtle Decorative Shapes */}
+      <div className="absolute inset-0 overflow-hidden opacity-20 pointer-events-none z-0">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-primary/40 to-transparent rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-accent/40 to-transparent rounded-full blur-3xl" />
       </div>
 
       {/* Content */}
@@ -83,7 +95,7 @@ const HeroSection = () => {
           <motion.p
             variants={fadeInVariant}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-xl sm:text-2xl md:text-3xl text-gray-600 dark:text-gray-400 mb-14 max-w-4xl mx-auto font-normal leading-relaxed"
+            className="text-xl sm:text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-14 max-w-4xl mx-auto font-normal leading-relaxed"
             style={{ letterSpacing: '-0.02em' }}
           >
             Experience world-class surfing, rich culture, and unforgettable adventures. Your perfect Indonesian journey awaits.
@@ -107,7 +119,7 @@ const HeroSection = () => {
               onClick={handleExplore}
               size="lg"
               variant="outline"
-              className="px-10 py-7 text-lg font-semibold rounded-full border-2 border-gray-300 dark:border-gray-700 text-black dark:text-white bg-white dark:bg-black hover:bg-gray-50 dark:hover:bg-gray-900 shadow-sm"
+              className="px-10 py-7 text-lg font-semibold rounded-full border-2 border-gray-400 dark:border-gray-600 text-black dark:text-white bg-white dark:bg-black hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-500 dark:hover:border-gray-500 shadow-sm"
             >
               Explore Experiences
             </Button>
@@ -121,12 +133,12 @@ const HeroSection = () => {
           >
             <div className="flex flex-col items-center justify-center space-y-2 p-8 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 shadow-sm hover:shadow-md">
               <div className="text-4xl font-bold text-black dark:text-white" style={{ fontWeight: 800, letterSpacing: '-0.03em' }}>10K+</div>
-              <div className="text-sm text-gray-500 dark:text-gray-400 font-medium">Travelers</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300 font-medium">Travelers</div>
             </div>
             
             <div className="flex flex-col items-center justify-center space-y-2 p-8 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 shadow-sm hover:shadow-md">
               <div className="text-4xl font-bold text-black dark:text-white" style={{ fontWeight: 800, letterSpacing: '-0.03em' }}>50+</div>
-              <div className="text-sm text-gray-500 dark:text-gray-400 font-medium">Destinations</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300 font-medium">Destinations</div>
             </div>
             
             <div className="flex flex-col items-center justify-center space-y-2 p-8 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 shadow-sm hover:shadow-md">
@@ -134,12 +146,12 @@ const HeroSection = () => {
                 4.9
                 <Star className="h-7 w-7 fill-yellow-400 text-yellow-400" />
               </div>
-              <div className="text-sm text-gray-500 dark:text-gray-400 font-medium">Rating</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300 font-medium">Rating</div>
             </div>
             
             <div className="flex flex-col items-center justify-center space-y-2 p-8 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 shadow-sm hover:shadow-md">
               <div className="text-4xl font-bold text-black dark:text-white" style={{ fontWeight: 800, letterSpacing: '-0.03em' }}>15+</div>
-              <div className="text-sm text-gray-500 dark:text-gray-400 font-medium">Years</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300 font-medium">Years</div>
             </div>
           </motion.div>
         </motion.div>
