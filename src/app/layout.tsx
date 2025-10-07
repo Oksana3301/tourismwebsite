@@ -100,7 +100,7 @@ export default function RootLayout({
                 "@type": "ContactPoint",
                 "telephone": "+62-895-6105-24580",
                 "contactType": "customer service",
-                   "email": "info@sumateraway.com",
+                   "email": "admin@sumateraway.com",
                 "availableLanguage": ["Indonesian", "English"]
               },
                    "sameAs": [

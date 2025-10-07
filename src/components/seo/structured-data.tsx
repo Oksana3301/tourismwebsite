@@ -24,7 +24,7 @@ export function TravelAgencySchema() {
     "image": "https://sumateraway.com/og-image.jpg",
     "description": "Plan, book, and glide across West Sumatra. Experience adventure tours, surf trips, cultural experiences, and eco-friendly accommodations.",
     "telephone": "+62-895-6105-24580",
-    "email": "info@sumateraway.com",
+    "email": "admin@sumateraway.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Jl. Sudirman No. 123",
@@ -37,7 +37,7 @@ export function TravelAgencySchema() {
       "@type": "ContactPoint",
       "telephone": "+62-895-6105-24580",
       "contactType": "customer service",
-      "email": "info@sumateraway.com",
+      "email": "admin@sumateraway.com",
       "availableLanguage": ["Indonesian", "English"]
     },
     "sameAs": [

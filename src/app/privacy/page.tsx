@@ -81,7 +81,7 @@ const PrivacyPage = () => {
       content: [
         'If you have any questions about this Privacy Policy, please contact us:',
         'Company: PT. Kurnia Cahaya Ilahi (SumateraWay)',
-        'Email: privacy@sumateraway.com',
+        'Email: admin@sumateraway.com',
         'Address: Jl. Sudirman No. 123, Padang, West Sumatra, Indonesia',
         'Phone: +62 895-6105-24580',
       ],
@@ -217,7 +217,7 @@ const PrivacyPage = () => {
                   <h3 className="font-bold text-xl mb-2 text-black dark:text-white">Data Protection Officer</h3>
                   <p className="text-gray-700 dark:text-gray-300 mb-4">For specific privacy concerns</p>
                   <a 
-                    href="mailto:dpo@sumateraway.com" 
+                    href="mailto:admin@sumateraway.com" 
                     className="inline-block px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-semibold hover:bg-gray-900 dark:hover:bg-gray-100 transition-all duration-300"
                   >
                     Contact DPO

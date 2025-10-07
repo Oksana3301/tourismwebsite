@@ -7,58 +7,58 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    location: 'California, USA',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces',
+    name: 'Marcus T.',
+    location: 'Perth, Australia',
+    avatar: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop&crop=faces',
     rating: 5,
-    quote: 'The best surf trip of my life! The waves in Mentawai were absolutely incredible, and the guides knew every single secret spot. Professional photography captured memories I will treasure forever.',
-    trip: 'Mentawai Surf Paradise',
-    date: 'September 2024'
-  },
-  {
-    name: 'David Chen',
-    location: 'Singapore',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-    quote: 'SumatraWay exceeded all expectations. The cultural immersion was authentic, the food was phenomenal, and our guide made us feel like family. Booking was seamless and support was instant.',
-    trip: 'Padang Cultural Journey',
-    date: 'August 2024'
-  },
-  {
-    name: 'Emma Williams',
-    location: 'London, UK',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-    quote: 'Absolutely stunning! The highland trek through Bukittinggi was breathtaking. Perfect organization, incredible views, and the local village experience was something I will never forget.',
-    trip: 'Bukittinggi Highland Adventure',
-    date: 'July 2024'
-  },
-  {
-    name: 'Michael Rodriguez',
-    location: 'Barcelona, Spain',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-    quote: 'Top-notch service from start to finish. The mobile app made everything easy, real-time tracking gave us peace of mind, and the included travel insurance was comprehensive. Highly recommended!',
-    trip: 'Mentawai Surf Paradise',
+    quote: 'Honestly didn\'t expect much but wow... the waves were firing! Our guide Adi knew exactly where to go each day based on swell. Got some of the best barrels of my life. Only downside was having to leave haha',
+    trip: 'Mentawai Surf Charter',
     date: 'October 2024'
   },
   {
-    name: 'Sophie Martin',
-    location: 'Paris, France',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
+    name: 'Rachel K.',
+    location: 'Vancouver, Canada',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=faces',
     rating: 5,
-    quote: 'What an adventure! The cooking class in Padang was a highlight - now I can make authentic Rendang at home. Every detail was thoughtfully planned. Worth every penny!',
-    trip: 'Padang Cultural Journey',
+    quote: 'My husband and I wanted something different from the usual Bali trip. This was perfect. The local village visit was eye-opening and the food... omg the rendang! Also appreciated the WhatsApp support when we had questions.',
+    trip: 'Culture & Nature Package',
     date: 'September 2024'
   },
   {
-    name: 'James Anderson',
-    location: 'Melbourne, Australia',
-    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
+    name: 'Tom H.',
+    location: 'Manchester, UK',
+    avatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=400&h=400&fit=crop&crop=faces',
     rating: 5,
-    quote: 'Perfect for adventure seekers! The blend of trekking, culture, and nature in Bukittinggi was phenomenal. Guides were knowledgeable and accommodations were comfortable. Best trip ever!',
-    trip: 'Bukittinggi Highland Adventure',
+    quote: 'Travelled solo, was a bit nervous tbh. But the group was brilliant and the guides made everyone feel welcome. Bukittinggi highlands are mental - like nothing I\'ve seen before. Already planning to come back next year.',
+    trip: 'Highland Trekking',
     date: 'August 2024'
+  },
+  {
+    name: 'Lisa M.',
+    location: 'California, USA',
+    avatar: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
+    rating: 5,
+    quote: 'Found this on Reddit and took a chance. Zero regrets. The surf camp was super chill, meals were included which was great, and met some awesome people. Price was fair compared to other quotes I got.',
+    trip: 'Surf Camp Mentawai',
+    date: 'November 2024'
+  },
+  {
+    name: 'Johan S.',
+    location: 'Stockholm, Sweden',
+    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
+    rating: 5,
+    quote: 'Booked the family package for me, wife and two kids (9 and 12). They loved it! Snorkeling was amazing, the village craft workshop was educational, and accommodations were clean and comfortable. Highly recommend for families.',
+    trip: 'Family Island Discovery',
+    date: 'July 2024'
+  },
+  {
+    name: 'Priya N.',
+    location: 'Singapore',
+    avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=faces',
+    rating: 5,
+    quote: 'Did the wellness retreat with my sister. It was exactly what we needed - morning yoga, afternoon surf, healthy food. Not too structured but enough activities. The sunset views from the villa were insane. Will def be back!',
+    trip: 'Wellness & Waves Retreat',
+    date: 'September 2024'
   },
 ];
 

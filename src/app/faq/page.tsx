@@ -232,7 +232,7 @@ const FAQPage = () => {
                   <h3 className="font-bold text-xl mb-2 text-black dark:text-white">Email Support</h3>
                   <p className="text-gray-700 dark:text-gray-300 mb-4">Get detailed answers within 24 hours</p>
                   <a 
-                    href="mailto:info@sumateraway.com" 
+                    href="mailto:admin@sumateraway.com" 
                     className="inline-block px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-semibold hover:bg-gray-900 dark:hover:bg-gray-100 transition-all duration-300"
                   >
                     Send Email
