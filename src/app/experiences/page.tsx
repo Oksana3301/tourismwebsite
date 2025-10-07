@@ -10,98 +10,56 @@ import { ExperiencesSEOOptimization } from '@/components/seo/seo';
 
 const experiences = [
   {
-    category: 'Surf',
+    category: 'Surf & Adventure',
     icon: Waves,
     color: 'blue',
     categoryImage: 'https://images.unsplash.com/photo-1502933691298-84fc14542831?w=600&h=600&fit=crop',
     items: [
       {
-        name: 'Mentawai Surf Charter',
-        description: '7-day luxury surf charter to world-class breaks',
-        duration: '7 days',
-        price: { usd: 1299, eur: 1195, idr: 19500000 },
+        name: 'Mentawai Surf & Culture Explorer',
+        description: 'A balanced itinerary combining surfing, cultural immersion, and nature exploration—perfect for surf-curious travelers who want more than just waves',
+        duration: '7 Days / 6 Nights',
+        price: { usd: 1600, eur: 1470, idr: 24000000 },
         image: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200&h=800&fit=crop',
-        highlights: ['Luxury boat', 'Professional guides', 'All meals included']
+        highlights: [
+          '4 days of surfing at beginner & intermediate spots',
+          'Cultural tour in local Mentawai village',
+          'Guided jungle trekking & waterfall visit',
+          'Snorkeling adventure in crystal-clear lagoons',
+          'Airport transfers (Padang)',
+          'All meals (breakfast, lunch, dinner)',
+          'Surf gear + local instructor',
+          'Boat transfers to islands',
+          'English-speaking local guide'
+        ],
+        bookingInfo: {
+          minGuests: 2,
+          advanceBooking: '1 month',
+          groupDiscount: 'Available for 4+ guests'
+        }
       },
       {
-        name: 'Surf Lessons for Beginners',
-        description: 'Learn to surf with certified instructors in Padang',
-        duration: '3 days',
-        price: { usd: 199, eur: 185, idr: 3000000 },
+        name: 'Ultimate Mentawai Surf Charter',
+        description: 'Designed for serious surfers seeking the best waves in the Mentawai Islands aboard a premium surf charter boat',
+        duration: '10 Days / 9 Nights',
+        price: { usd: 3500, eur: 3220, idr: 52500000 },
         image: 'https://images.unsplash.com/photo-1502933691298-84fc14542831?w=1200&h=800&fit=crop',
-        highlights: ['Certified instructors', 'Board rental', 'Beachfront location']
-      }
-    ]
-  },
-  {
-    category: 'Culture',
-    icon: MapPin,
-    color: 'green',
-    categoryImage: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=600&h=600&fit=crop',
-    items: [
-      {
-        name: 'Minangkabau Village Tour',
-        description: 'Experience authentic village life and traditions',
-        duration: '1 day',
-        price: { usd: 79, eur: 72, idr: 1185000 },
-        image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&h=800&fit=crop',
-        highlights: ['Traditional performances', 'Local lunch', 'Craft workshop']
-      },
-      {
-        name: 'Cultural Heritage Walk',
-        description: 'Explore historical sites and colonial architecture',
-        duration: 'Half day',
-        price: { usd: 45, eur: 41, idr: 675000 },
-        image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&h=800&fit=crop',
-        highlights: ['Expert guide', 'Historical insights', 'Photo opportunities']
-      }
-    ]
-  },
-  {
-    category: 'Food',
-    icon: Utensils,
-    color: 'orange',
-    categoryImage: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=600&fit=crop',
-    items: [
-      {
-        name: 'Padang Food Safari',
-        description: 'Taste authentic Padang cuisine at local warungs',
-        duration: '4 hours',
-        price: { usd: 35, eur: 32, idr: 525000 },
-        image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&h=800&fit=crop',
-        highlights: ['10+ food tastings', 'Local guide', 'Market visit']
-      },
-      {
-        name: 'Cooking Class',
-        description: 'Learn to prepare traditional Minangkabau dishes',
-        duration: '3 hours',
-        price: { usd: 45, eur: 41, idr: 675000 },
-        image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200&h=800&fit=crop',
-        highlights: ['Hands-on cooking', 'Recipe book', 'Meal included']
-      }
-    ]
-  },
-  {
-    category: 'Adventure',
-    icon: Camera,
-    color: 'purple',
-    categoryImage: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=600&fit=crop',
-    items: [
-      {
-        name: 'Canyon Hiking',
-        description: 'Explore dramatic canyons and waterfalls',
-        duration: 'Full day',
-        price: { usd: 65, eur: 60, idr: 975000 },
-        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&h=800&fit=crop',
-        highlights: ['Professional guide', 'Equipment included', 'Lunch provided']
-      },
-      {
-        name: 'Photography Tour',
-        description: 'Capture stunning landscapes with professional guidance',
-        duration: 'Half day',
-        price: { usd: 55, eur: 50, idr: 825000 },
-        image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop',
-        highlights: ['Photography tips', 'Best viewpoints', 'Editing session']
+        highlights: [
+          'Access to 20+ surf breaks via boat',
+          'Surf up to 3 sessions per day',
+          'Sleep aboard fully equipped charter boat',
+          'Travel with seasoned surf guide',
+          '9 nights aboard surf charter boat',
+          '3 chef-prepared meals daily',
+          'Professional surf guide + tender boat support',
+          'Photography & drone package (optional add-on)'
+        ],
+        bookingInfo: {
+          minGuests: 6,
+          advanceBooking: 'Minimum 6 guests per trip (shared charter)',
+          groupDiscount: 'Full private charter available (up to 12 pax)',
+          departure: 'Departures from Padang port'
+        }
       }
     ]
   }

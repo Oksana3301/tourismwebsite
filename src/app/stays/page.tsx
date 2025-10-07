@@ -10,64 +10,52 @@ import { StaysSEOOptimization } from '@/components/seo/seo';
 
 const stays = [
   {
-    name: 'Surf Lodge Mentawai',
-    location: 'Tua Pejat, Mentawai Islands',
-    type: 'Surf Resort',
-    rating: 4.9,
-    price: { usd: 299, eur: 275, idr: 4500000 },
-    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200&h=800&fit=crop',
-    amenities: ['WiFi', 'Restaurant', 'Surfboard rental', 'Airport transfer'],
-    highlights: ['Beachfront location', 'Professional surf guides', 'All-inclusive packages']
-  },
-  {
-    name: 'Minang Heritage Hotel',
-    location: 'Padang City Center',
-    type: 'Boutique Hotel',
-    rating: 4.7,
-    price: { usd: 89, eur: 82, idr: 1350000 },
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=800&fit=crop',
-    amenities: ['WiFi', 'Restaurant', 'Swimming pool', 'Spa'],
-    highlights: ['Traditional architecture', 'Cultural performances', 'Central location']
-  },
-  {
-    name: 'Mountain View Resort',
-    location: 'Bukittinggi Highlands',
-    type: 'Mountain Resort',
+    name: 'Surf Camp Mentawai',
+    location: 'Mentawai Islands',
+    type: 'Surf Camp',
     rating: 4.8,
-    price: { usd: 129, eur: 118, idr: 1950000 },
-    image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1200&h=800&fit=crop',
-    amenities: ['WiFi', 'Restaurant', 'Mountain view', 'Hiking trails'],
-    highlights: ['Cool climate', 'Panoramic views', 'Nature activities']
+    price: { usd: 110, eur: 101, idr: 1650000 },
+    duration: '5 Nights',
+    perNight: true,
+    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200&h=800&fit=crop',
+    amenities: ['WiFi', 'Filtered water', 'Surfboard storage', 'Daily surf transport'],
+    highlights: [
+      'Steps away from popular surf spots',
+      'Communal meals and beach bonfires',
+      'Optional yoga or cultural activities',
+      'Shared bungalow accommodation',
+      '3 daily meals included'
+    ],
+    bookingInfo: {
+      minNights: 3,
+      discount: 'Discounts for stays >7 nights',
+      upgrade: 'Optional private room upgrade'
+    }
   },
   {
-    name: 'Beach Bungalow',
-    location: 'Padang Beach',
-    type: 'Beach Bungalow',
-    rating: 4.6,
-    price: { usd: 69, eur: 63, idr: 1050000 },
-    image: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1200&h=800&fit=crop',
-    amenities: ['WiFi', 'Kitchen', 'Beach access', 'Bicycle rental'],
-    highlights: ['Direct beach access', 'Local atmosphere', 'Budget-friendly']
-  },
-  {
-    name: 'Luxury Villa',
-    location: 'Sungai Pagu, Mentawai',
-    type: 'Private Villa',
-    rating: 5.0,
-    price: { usd: 599, eur: 545, idr: 9000000 },
-    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&h=800&fit=crop',
-    amenities: ['WiFi', 'Private pool', 'Butler service', 'Helipad'],
-    highlights: ['Ultimate privacy', 'Personal chef', 'Luxury amenities']
-  },
-  {
-    name: 'Cultural Homestay',
-    location: 'Koto Gadang, Bukittinggi',
-    type: 'Homestay',
-    rating: 4.5,
-    price: { usd: 35, eur: 32, idr: 525000 },
-    image: 'https://images.unsplash.com/photo-1568495248636-6432b97bd949?w=1200&h=800&fit=crop',
-    amenities: ['WiFi', 'Home-cooked meals', 'Cultural activities'],
-    highlights: ['Authentic experience', 'Local family', 'Cultural immersion']
+    name: 'Island Resort Getaway',
+    location: 'Mentawai Islands',
+    type: 'Beach Resort',
+    rating: 4.9,
+    price: { usd: 180, eur: 165, idr: 2700000 },
+    duration: '7 Nights',
+    perNight: true,
+    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&h=800&fit=crop',
+    amenities: ['WiFi', 'Infinity pool', 'Spa', 'Sunset bar'],
+    highlights: [
+      'Private beachfront villas',
+      'On-site spa & massage',
+      'Infinity pool + sunset bar',
+      'Daily breakfast buffet',
+      'Welcome cocktail & fruit platter',
+      'Free use of kayaks, paddleboards',
+      'Airport & boat transfers'
+    ],
+    bookingInfo: {
+      minNights: 4,
+      packages: 'Honeymoon & couple packages available',
+      upgrade: 'Premium villa options'
+    }
   }
 ];
 
