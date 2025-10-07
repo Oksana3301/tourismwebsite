@@ -268,19 +268,19 @@ const StaysPage = () => {
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                       <div className="absolute top-4 left-4">
-                        <Badge className="bg-black/90 text-white border-0 backdrop-blur-sm">{stay.type}</Badge>
+                        <Badge className="bg-black/90 text-white border-0 backdrop-blur-sm drop-shadow-lg">{stay.type}</Badge>
                       </div>
-                      <div className="absolute top-4 right-4 flex items-center space-x-1 bg-black/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                      <div className="absolute top-4 right-4 flex items-center space-x-1 bg-black/90 backdrop-blur-sm px-3 py-1 rounded-full drop-shadow-lg">
                         <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
                         <span className="text-sm font-semibold text-white">{stay.rating}</span>
                       </div>
-                      <div className="absolute bottom-4 left-4 right-4 text-white">
-                        <h3 className="text-xl font-bold mb-2 drop-shadow-2xl">{stay.name}</h3>
-                        <div className="flex items-center space-x-1 drop-shadow-lg">
-                          <MapPin className="h-4 w-4" />
-                          <span className="text-sm">{stay.location}</span>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <h3 className="text-xl font-bold mb-2 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">{stay.name}</h3>
+                        <div className="flex items-center space-x-1 text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                          <MapPin className="h-4 w-4 text-white" />
+                          <span className="text-sm text-white">{stay.location}</span>
                         </div>
                       </div>
                     </div>
