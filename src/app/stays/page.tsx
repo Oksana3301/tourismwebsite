@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { StaysSEOOptimization } from '@/components/seo/seo';
+import { BreadcrumbSchema } from '@/components/seo/structured-data';
 
 const stays = [
   {
@@ -165,6 +166,12 @@ const StaysPage = () => {
   return (
     <>
       <StaysSEOOptimization />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://sumateraway.com/' },
+          { name: 'Stays', url: 'https://sumateraway.com/stays' }
+        ]}
+      />
       <PageWrapper>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 bg-gradient-to-b from-background via-secondary/30 to-background transition-colors duration-300 overflow-hidden">

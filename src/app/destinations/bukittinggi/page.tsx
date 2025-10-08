@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { BukittinggiSEOOptimization } from '@/components/seo/seo';
+import { BreadcrumbSchema } from '@/components/seo/structured-data';
 
 const BukittinggiPage = () => {
   const attractions = [
@@ -82,6 +83,13 @@ const BukittinggiPage = () => {
   return (
     <>
       <BukittinggiSEOOptimization />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://sumateraway.com/' },
+          { name: 'Destinations', url: 'https://sumateraway.com/#destinations' },
+          { name: 'Bukittinggi', url: 'https://sumateraway.com/destinations/bukittinggi' }
+        ]}
+      />
       <PageWrapper>
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

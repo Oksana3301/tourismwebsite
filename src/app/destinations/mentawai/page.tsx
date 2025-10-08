@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MentawaiSEOOptimization } from '@/components/seo/seo';
+import { BreadcrumbSchema } from '@/components/seo/structured-data';
 
 const MentawaiPage = () => {
   const surfSpots = [
@@ -61,6 +62,13 @@ const MentawaiPage = () => {
   return (
     <>
       <MentawaiSEOOptimization />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://sumateraway.com/' },
+          { name: 'Destinations', url: 'https://sumateraway.com/#destinations' },
+          { name: 'Mentawai', url: 'https://sumateraway.com/destinations/mentawai' }
+        ]}
+      />
       <PageWrapper>
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

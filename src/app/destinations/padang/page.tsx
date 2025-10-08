@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { PadangSEOOptimization } from '@/components/seo/seo';
+import { BreadcrumbSchema } from '@/components/seo/structured-data';
 
 const PadangPage = () => {
   const culturalSites = [
@@ -79,6 +80,13 @@ const PadangPage = () => {
   return (
     <>
       <PadangSEOOptimization />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://sumateraway.com/' },
+          { name: 'Destinations', url: 'https://sumateraway.com/#destinations' },
+          { name: 'Padang', url: 'https://sumateraway.com/destinations/padang' }
+        ]}
+      />
       <PageWrapper>
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

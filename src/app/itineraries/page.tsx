@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ItinerariesSEOOptimization } from '@/components/seo/seo';
+import { BreadcrumbSchema } from '@/components/seo/structured-data';
 
 const itineraries = [
   {
@@ -129,6 +130,12 @@ const ItinerariesPage = () => {
   return (
     <>
       <ItinerariesSEOOptimization />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://sumateraway.com/' },
+          { name: 'Itineraries', url: 'https://sumateraway.com/itineraries' }
+        ]}
+      />
       <PageWrapper>
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

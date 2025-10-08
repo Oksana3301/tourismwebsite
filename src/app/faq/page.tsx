@@ -6,6 +6,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { FAQSEOOptimization } from '@/components/seo/seo';
+import { BreadcrumbSchema } from '@/components/seo/structured-data';
 
 const FAQPage = () => {
   const faqCategories = [
@@ -100,7 +102,15 @@ const FAQPage = () => {
   ];
 
   return (
-    <PageWrapper>
+    <>
+      <FAQSEOOptimization />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://sumateraway.com/' },
+          { name: 'FAQ', url: 'https://sumateraway.com/faq' }
+        ]}
+      />
+      <PageWrapper>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -294,6 +304,7 @@ const FAQPage = () => {
         </div>
       </section>
     </PageWrapper>
+    </>
   );
 };
 

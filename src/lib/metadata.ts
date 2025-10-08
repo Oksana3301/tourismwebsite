@@ -142,47 +142,47 @@ export function generateMetadata(config: Partial<SEOConfig>): Metadata {
 // Page-specific SEO configurations
 export const pageSEOConfigs = {
   home: {
-    title: 'SumateraWay - West Sumatra & Mentawai Trip Planner',
-    description: 'Plan, book, and glide across West Sumatra. Experience the best of Mentawai surfing and Padang culture with our expert-guided tours.',
+    title: 'SumateraWay - West Sumatra & Mentawai Trip Planner | Surf & Culture Tours',
+    description: 'Plan your West Sumatra adventure! Book Mentawai surf trips, Padang culture tours & eco-stays. Expert guides, authentic experiences. Get your free quote today!',
   },
   mentawai: {
-    title: 'Mentawai Surf Tours - World-Class Waves in West Sumatra',
-    description: 'Book your Mentawai surf adventure with our expert guides. Experience world-class waves and pristine beaches.',
+    title: 'Mentawai Surf Tours - World-Class Waves & Island Adventures | SumateraWay',
+    description: 'Discover Mentawai\'s legendary surf breaks! Premium surf charters, beginner packages & island experiences. 15+ years expertise. Book your dream surf trip now!',
   },
   padang: {
-    title: 'Padang Culture Tours - Discover West Sumatran Heritage',
-    description: 'Explore the rich culture and heritage of Padang with our expert-guided tours. Visit traditional villages and taste local cuisine.',
+    title: 'Padang Culture Tours - Authentic Minangkabau Heritage | SumateraWay',
+    description: 'Immerse in Padang\'s rich culture! Traditional cuisine, historic landmarks & Minangkabau villages. Guided tours from $449. Experience authentic West Sumatra!',
   },
   bukittinggi: {
-    title: 'Bukittinggi Tours - Highland Adventures in West Sumatra',
-    description: 'Discover the beauty of Bukittinggi with our guided tours. Visit stunning landscapes and learn about Minangkabau culture.',
+    title: 'Bukittinggi Highland Adventures - Mountain Tours & Waterfalls | SumateraWay',
+    description: 'Explore Bukittinggi\'s volcanic landscapes! Trek Mount Marapi, visit Harau Valley waterfalls & traditional villages. Highland adventures from $599. Book now!',
   },
   experiences: {
-    title: 'Adventure Experiences in West Sumatra',
-    description: 'Choose from our range of adventure experiences including surfing, cultural tours, and eco-friendly activities.',
+    title: 'West Sumatra Adventure Experiences - Surf, Culture & Nature | SumateraWay',
+    description: 'Choose your adventure! Surf charters, cultural immersions, wellness retreats & family packages. 6+ unique experiences. Customize your West Sumatra journey!',
   },
   stays: {
-    title: 'Eco-Friendly Stays in West Sumatra',
-    description: 'Find sustainable and comfortable accommodations for your West Sumatra adventure. From beachfront bungalows to mountain lodges.',
+    title: 'West Sumatra Accommodations - Eco-Friendly Stays & Resorts | SumateraWay',
+    description: 'Find your perfect stay! Surf camps, beach resorts, eco-lodges & luxury villas in Mentawai & Padang. From $55/night. Book sustainable accommodations now!',
   },
   itineraries: {
-    title: 'Custom Tour Itineraries for West Sumatra',
-    description: 'Create your perfect West Sumatra adventure with our customizable tour itineraries. Tailored to your interests and schedule.',
+    title: 'Custom West Sumatra Itineraries - Personalized Tour Planning | SumateraWay',
+    description: 'Create your dream itinerary! Tailor-made tours combining surf, culture & adventure. 3-14 day packages. Expert planning, flexible schedules. Start planning today!',
   },
   tripPlanner: {
-    title: 'Trip Planner - SumateraWay',
-    description: 'Plan, book, and glide across West Sumatra. Design your perfect itinerary with our interactive trip planner.',
+    title: 'Interactive Trip Planner - Design Your West Sumatra Adventure | SumateraWay',
+    description: 'Plan your perfect West Sumatra trip! Interactive tool to build custom itineraries, compare prices & book experiences. Free planning assistance. Start now!',
   },
   faq: {
-    title: 'Frequently Asked Questions - SumateraWay',
-    description: 'Find answers to common questions about our tours, booking process, and travel to West Sumatra.',
+    title: 'FAQ - Travel Tips & Booking Info for West Sumatra | SumateraWay',
+    description: 'Get answers fast! Common questions about West Sumatra travel, visa requirements, best surf seasons, booking process & safety tips. Plan with confidence!',
   },
   terms: {
-    title: 'Terms & Conditions - SumateraWay',
-    description: 'Please read our terms and conditions before booking your tour with SumateraWay.',
+    title: 'Terms & Conditions - Booking Terms for SumateraWay Tours',
+    description: 'Review our terms & conditions: cancellation policy, payment terms, travel insurance requirements & booking guidelines. Transparent policies for your peace of mind.',
   },
   privacy: {
-    title: 'Privacy Policy - SumateraWay',
-    description: 'Learn how we protect your personal information when you book with SumateraWay.',
+    title: 'Privacy Policy - How We Protect Your Data | SumateraWay',
+    description: 'Your privacy matters! Learn how we collect, use & protect your personal information. GDPR compliant. Secure booking & data protection guaranteed.',
   },
 };

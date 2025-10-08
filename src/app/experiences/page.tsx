@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ExperiencesSEOOptimization } from '@/components/seo/seo';
+import { BreadcrumbSchema } from '@/components/seo/structured-data';
 
 const experiences = [
   {
@@ -156,6 +157,12 @@ const ExperiencesPage = () => {
   return (
     <>
       <ExperiencesSEOOptimization />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://sumateraway.com/' },
+          { name: 'Experiences', url: 'https://sumateraway.com/experiences' }
+        ]}
+      />
       <PageWrapper>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 bg-gradient-to-b from-background via-secondary/30 to-background transition-colors duration-300 overflow-hidden">
