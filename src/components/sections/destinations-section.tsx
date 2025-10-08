@@ -114,7 +114,7 @@ const DestinationsSection = () => {
         <div className="absolute top-20 right-10 w-64 h-64 rounded-full overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1502933691298-84fc14542831?q=80&w=600&auto=format&fit=crop"
-            alt="Decoration"
+            alt="Mentawai surf waves - World-class surfing destination"
             className="w-full h-full object-cover"
             loading="lazy"
           />
@@ -122,7 +122,7 @@ const DestinationsSection = () => {
         <div className="absolute bottom-20 left-10 w-64 h-64 rounded-full overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=600&auto=format&fit=crop"
-            alt="Decoration"
+            alt="Bukittinggi highland mountains - Volcanic landscapes and traditional villages"
             className="w-full h-full object-cover"
             loading="lazy"
           />
@@ -130,7 +130,7 @@ const DestinationsSection = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=800&auto=format&fit=crop"
-            alt="Decoration"
+            alt="Padang authentic cuisine - Traditional Minangkabau food culture"
             className="w-full h-full object-cover"
             loading="lazy"
           />

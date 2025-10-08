@@ -180,7 +180,7 @@ const StaysPage = () => {
             <div className="absolute top-20 right-10 w-64 h-64 rounded-full overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=600&auto=format&fit=crop"
-                alt="Decoration"
+                alt="Luxury beachfront resort in Mentawai"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -188,7 +188,7 @@ const StaysPage = () => {
             <div className="absolute bottom-20 left-10 w-64 h-64 rounded-full overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop"
-                alt="Decoration"
+                alt="Eco-friendly hotel in West Sumatra"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -196,7 +196,7 @@ const StaysPage = () => {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=800&auto=format&fit=crop"
-                alt="Decoration"
+                alt="Boutique accommodation with ocean views"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

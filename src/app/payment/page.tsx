@@ -258,7 +258,7 @@ const PaymentPage = () => {
           <div className="absolute top-20 right-10 w-64 h-64 rounded-full overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=600&auto=format&fit=crop"
-              alt="Decoration"
+              alt="Secure online payment for West Sumatra tours"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -266,7 +266,7 @@ const PaymentPage = () => {
           <div className="absolute bottom-20 left-10 w-64 h-64 rounded-full overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=600&auto=format&fit=crop"
-              alt="Decoration"
+              alt="Easy booking and payment process"
               className="w-full h-full object-cover"
               loading="lazy"
             />

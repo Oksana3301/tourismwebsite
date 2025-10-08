@@ -42,7 +42,7 @@ const BookingSection = () => {
       <div className="absolute inset-0 pointer-events-none opacity-3 dark:opacity-2">
         <img
           src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1400&auto=format&fit=crop"
-          alt="Decoration"
+          alt="West Sumatra travel booking - Plan your adventure today"
           className="w-full h-full object-cover"
           loading="lazy"
         />

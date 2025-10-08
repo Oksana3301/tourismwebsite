@@ -36,7 +36,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=2000&auto=format&fit=crop"
-          alt="Bali Beach Sunset"
+          alt="Beautiful tropical beach in West Sumatra - Paradise destination for surf and culture tours"
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
         />

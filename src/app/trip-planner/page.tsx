@@ -72,7 +72,7 @@ const TripPlannerPage = () => {
             <div className="absolute top-20 right-10 w-64 h-64 rounded-full overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=600&fit=crop"
-                alt="Decoration"
+                alt="Plan your perfect West Sumatra itinerary"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -80,7 +80,7 @@ const TripPlannerPage = () => {
             <div className="absolute bottom-20 left-10 w-64 h-64 rounded-full overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1502933691298-84fc14542831?w=600&h=600&fit=crop"
-                alt="Decoration"
+                alt="Surfing and island hopping itinerary planner"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -88,7 +88,7 @@ const TripPlannerPage = () => {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=800&fit=crop"
-                alt="Decoration"
+                alt="Custom adventure tour planning for West Sumatra"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
